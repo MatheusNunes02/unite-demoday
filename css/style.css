@@ -46,6 +46,7 @@
     border: solid 0px transparent;
     padding: 5px;
     transition: 0.2s;
+    box-sizing: border-box;
 }
 
 
