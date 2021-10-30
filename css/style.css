@@ -16,14 +16,6 @@
     justify-self: flex-start;
 }
 
-@media screen and (max-width:768px) {
-    .ajustarImg{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-}
-
 .transparentBtn{
     border: solid 0px transparent;
     border-radius: 10px;
@@ -43,10 +35,11 @@
     border-radius: 10px;
     width: 150px;
     color: var(--branco);
-    border: solid 0px transparent;
+    border: solid 1.8px transparent;
     padding: 5px;
     transition: 0.2s;
     box-sizing: border-box;
+
 }
 
 
@@ -54,4 +47,43 @@
     border: solid 1.8px var(--amarelo);
     background-color: transparent;
     color: var(--amarelo);
+}
+
+
+.title{
+    font-weight: bolder;
+    font-size: 40px;
+}
+
+
+.img1{
+    height: 450px;
+}
+
+
+/* @media */
+
+@media screen and (max-width:768px) {
+
+    /* Header */
+    .ajustarImg{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .ajustarBtn{
+        justify-content:center;
+        align-items: center;
+    }
+
+    #header{
+        border-bottom: solid 0.5px var(--azulEscuro);
+        padding-bottom: 40px;
+    }
+
+    /* 1º Parte da Landing Page */
+
+    .ajustarTexto{
+        text-align: center;
+    }
 }
