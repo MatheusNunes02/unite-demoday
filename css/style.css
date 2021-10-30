@@ -1,4 +1,3 @@
-
 @import url('../global/global.css');
 
 
@@ -10,7 +9,6 @@
     font-family: var(--fonte);
     font-size: 20px;
 }
-
 .inicio_landing{
     height: 100vh;
 }
@@ -57,11 +55,6 @@
 .title{
     font-weight: bolder;
     font-size: 40px;
-    width: 400px;
-}
-
-.text{
-    max-width: 500px;
 }
 
 
@@ -69,16 +62,25 @@
     height: 450px;
 }
 
-.parte2_landingpage{
-    width: 100%;
+.parteDois_landing{
+    background-color: var(--azulEscuro);
     height: 100vh;
-    background-color:  var(--azulEscuro);
+    width: 100%;
 }
 
 
 /* @media */
 
+@media screen and (max-width:780px){
+    .inicio_landing{
+        height: 100%;
+    }
+}
+
+
 @media screen and (max-width:768px) {
+
+
 
     /* Header */
     .ajustarImg{
