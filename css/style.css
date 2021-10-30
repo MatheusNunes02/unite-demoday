@@ -13,13 +13,44 @@
 
 .logo{
     width: 100px;
+    justify-self: flex-start;
+}
+
+@media screen and (max-width:768px) {
+    .ajustarImg{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.transparentBtn{
+    border: solid 0px transparent;
+    border-radius: 10px;
+    width: 150px;
+    padding: 5px;
+    transition: 0.2s;
+}
+
+.transparentBtn:hover{
+    /* border: solid 1.8px var(--amarelo); */
+    background-color: transparent;
+    color: var(--amarelo);
 }
 
 .yellowBtn{
     background-color: var(--amarelo);
     border-radius: 10px;
-    width: 100px;
+    width: 150px;
     color: var(--branco);
     border: solid 0px transparent;
     padding: 5px;
+    transition: 0.2s;
+}
+
+
+.yellowBtn:hover{
+    border: solid 1.8px var(--amarelo);
+    background-color: transparent;
+    color: var(--amarelo);
 }
