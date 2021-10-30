@@ -8,4 +8,18 @@
     box-sizing: border-box;
     background-color: var(--branco);
     font-family: var(--fonte);
+    font-size: 20px;
+}
+
+.logo{
+    width: 100px;
+}
+
+.yellowBtn{
+    background-color: var(--amarelo);
+    border-radius: 10px;
+    width: 100px;
+    color: var(--branco);
+    border: solid 0px transparent;
+    padding: 5px;
 }
