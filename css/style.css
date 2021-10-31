@@ -121,9 +121,15 @@
 
 }
 
+.card_parteTres:hover{
+    background-color: var(--azulClaro);
+    transition: 0.5s;
+}
+
 .card_parteTres img{
     padding: 10px 0px 20px 0px;
 }
+
 
 
 
@@ -163,4 +169,46 @@
     .ajustarTexto{
         text-align: center;
     }
+}
+
+
+/* Adicionais */
+
+#back-to-top {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    border-radius: 15px;
+    border: solid 2px var(--preto);
+    background-color: var(--amarelo);
+    -webkit-animation: fadeAnimation 0.5s;
+    transition: 0.2s;
+}
+
+@-webkit-keyframes fadeAnimation {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 0.25;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+#back-to-top:hover {
+    background-color: transparent;
+    border: solid 2px var(--amarelo);
+}
+
+#back-to-top.transition {
+    background-color: var(--branco);
 }
