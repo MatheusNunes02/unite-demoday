@@ -8,9 +8,11 @@
     font-family: var(--fonte);
     font-size: 20px;
 }
+
 .inicio_landing{
     height: 100vh;
     background-color: var(--branco);
+    padding-bottom: 90px;
 }
 
 .logo{
@@ -45,19 +47,16 @@
 
 }
 
-
 .yellowBtn:hover{
     border: solid 1.8px var(--amarelo);
     background-color: transparent;
     color: var(--amarelo);
 }
 
-
 .title{
     font-weight: bolder;
     font-size: 40px;
 }
-
 
 .img1{
     height: 450px;
@@ -71,7 +70,61 @@
     background-color: var(--azulEscuro);
     height: 100vh;
     width: 100%;
+    text-align: center;
 }
+
+.parteDois_landing h2{
+    color: var(--branco);
+}
+
+.parteDois_landing p{
+    color: var(--amarelo);
+    padding-bottom: 80px;
+}
+
+.img2 img{
+    min-width: 200px;
+    max-width: 100%;
+}
+
+.parteTres_landing{
+    background-color: var(--branco);
+    min-height: 100vh;
+    max-height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 0px 80px 0px;
+}
+
+.boxcard_parteTres{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card_parteTres{
+    height: 520px;
+    width: 340px;
+    background-color: var(--azulEscuro);
+    border-radius: 15px;
+    text-align: center;
+    padding: 40px 20px 20px 20px;
+    color: var(--branco);
+
+}
+
+.card_parteTres img{
+    padding: 10px 0px 20px 0px;
+}
+
+
+
+
 
 
 /* @media */
