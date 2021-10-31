@@ -5,12 +5,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: var(--branco);
     font-family: var(--fonte);
     font-size: 20px;
 }
 .inicio_landing{
     height: 100vh;
+    background-color: var(--branco);
 }
 
 .logo{
@@ -24,6 +24,7 @@
     width: 150px;
     padding: 5px;
     transition: 0.2s;
+    background-color: transparent;
 }
 
 .transparentBtn:hover{
@@ -63,6 +64,10 @@
 }
 
 .parteDois_landing{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: var(--azulEscuro);
     height: 100vh;
     width: 100%;
@@ -71,7 +76,7 @@
 
 /* @media */
 
-@media screen and (max-width:780px){
+@media screen and (max-width:992px){
     .inicio_landing{
         height: 100%;
     }
@@ -79,7 +84,6 @@
 
 
 @media screen and (max-width:768px) {
-
 
 
     /* Header */
