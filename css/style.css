@@ -184,11 +184,11 @@
     border-radius: 15px;
     border: solid 2px var(--preto);
     background-color: var(--amarelo);
-    -webkit-animation: fadeAnimation 0.5s;
+    animation: fadeAnimation 0.5s;
     transition: 0.2s;
 }
 
-@-webkit-keyframes fadeAnimation {
+@keyframes fadeAnimation {
     0% {
         opacity: 0;
     }
