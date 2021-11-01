@@ -133,8 +133,23 @@
 
 
 
+.partequatro_landing{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--amarelo);
+    min-height: 100vh;
+    max-height: 100%;
+    width: 100%;
+    text-align: center;
+    padding: 90px 0px;
+}
 
 
+.img3{
+    height: 400px;
+}
 
 
 /* @media */
@@ -168,6 +183,13 @@
 
     .ajustarTexto{
         text-align: center;
+    }
+
+    .ajustarTexto2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 }
 
