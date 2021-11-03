@@ -1,0 +1,25 @@
+body {
+  background: #829399;
+  font-family: 'Roboto', sans-serif;
+}
+
+form {
+  background: #2e4052;
+  color: #fff;
+  width: 330px;
+  max-width: 400px;
+  padding: 6rem 3rem 6rem 3rem;
+
+  margin: auto;
+}
+.rounded-3 {
+  border-radius: 1rem !important;
+}
+
+.btn-primary {
+  background-color: #ffc757;
+  border: 0;
+}
+.btn {
+  border-radius: 1rem;
+}
