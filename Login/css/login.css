@@ -1,0 +1,66 @@
+body {
+  background: #2e4052;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+  text-align: center;
+}
+a{
+  text-decoration: none;
+}
+
+h1{
+  color: white;
+}
+
+p{
+  font-size: 14px;
+  color: white;
+}
+
+.fontAmarela, .fontPequena{
+  color: #ffc757;
+  cursor: pointer;
+}
+
+.fontAmarela:hover, .fontPequena:hover{
+  color: blue;
+}
+
+.fontPequena{
+  margin: 0;
+  font-size: 13px;
+  text-align: right;
+}
+
+
+
+/* FORM */
+form {
+  background: #829399;
+  color: #fff;
+  width: 350px;
+  max-width: 400px;
+  height: 600px;
+  margin: auto;
+}
+.rounded-3 {
+  border-radius: 1rem !important;
+}
+/* Tamanho do Form */
+.aln{
+  padding: 8rem 2rem 8rem 2rem;
+}
+.aln-1{
+  padding: 5rem 2rem 5rem 2rem;
+}
+/* Class input  */
+.form-control {
+  border-radius: 0.75rem;
+  border: 1.5px solid #ffc757;
+}
+/* Button  */
+.btn {
+  border-radius: 1rem;
+  background: #ffc757;
+  border: 0;
+}
