@@ -167,6 +167,10 @@
     padding-bottom: 60px;
 }
 
+.texto_partecinco > .title{
+    padding-bottom: 30px;
+}
+
 .accordion-item{
     padding: 15px 0px;
     border: 0px;
@@ -177,7 +181,96 @@
     color: white;
 }
 
+.accordion-button::after{
+    background-image: url(../img/arrowwhite.svg);
+}
+
+.accordion-button:not(.collapsed)::after{
+    background-image: url(../img/arrowwhite.svg);
+}
+
+.botaoFaleconosco{
+    border: 0;
+    width: 180px;
+    height: 50px;
+    border-radius: 15px;
+    background-color: var(--amarelo);
+    color: white;
+    margin: 80px 0px;
+    transition: 0.2s;
+}
+
+.botaoFaleconosco:hover{
+    border: solid 1.8px var(--amarelo);
+    background-color: transparent;
+    color: var(--amarelo);
+}
+
+.footerLandingpage{
+    width: 100%;
+    min-height: 400px;
+    max-height: 100%;
+    background-color: var(--azulEscuro);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteudoFooterlandingpage{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 90px 0px;
+}
+
+.conteudo1{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 50%;
+    color: white;
+    text-decoration: none;
+    
+}
+
+.conteudo1 ul{
+    padding: 30px;
+}
+
+.conteudo1 li{
+    list-style: none;
+}
+
+.conteudo1 li a{
+    text-decoration: none;
+    color: white;
+}
+
+.conteudo1 li a:hover{
+    color: var(--amarelo);
+}
+
+.conteudo1 img{
+    width: 180px;
+}
+
+.conteudo2{
+    width: 300px;
+    color: white;
+}
+
+
+
 /* @media */
+@media screen and (max-width:790px){
+    .conteudoFooterlandingpage{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
 
 @media screen and (max-width:992px){
     .inicio_landing{
@@ -222,6 +315,7 @@
 /* Adicionais */
 
 #back-to-top {
+    box-sizing: border-box;
     position: fixed;
     bottom: 50px;
     right: 50px;
@@ -229,10 +323,12 @@
     height: 50px;
     padding: 5px;
     border-radius: 15px;
-    border: solid 2px var(--preto);
+    border: 0px;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.4);
     background-color: var(--amarelo);
     animation: fadeAnimation 0.5s;
     transition: 0.2s;
+    z-index: 99999999999999;
 }
 
 @keyframes fadeAnimation {
