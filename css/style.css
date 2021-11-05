@@ -151,6 +151,31 @@
     height: 400px;
 }
 
+.partecinco_landing{
+    min-height: 100vh;
+    max-height: 100%;
+    background-color: #ffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.texto_partecinco{
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.accordion-item{
+    padding: 15px 0px;
+    border: 0px;
+}
+
+.accordion-button{
+    background-color: var(--azulEscuro);
+    color: white;
+}
 
 /* @media */
 
