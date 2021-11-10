@@ -29,16 +29,30 @@ a{
   padding: 10rem 2rem 10rem 2rem;
 }
 /* Class input  */
-.form-control {
+.form-control,
+.form-select {
   border-radius: 0.75rem;
-  border: 1.5px solid #ffc757;
+  border: 2px solid #ffc757;
 }
+.form-control:focus,
+.form-control:active{
+  outline: none;
+  box-shadow: none;
+  border:3px solid #ffc757;
+}
+.form-select:focus,
+.form-select:active{
+  outline: none;
+  box-shadow: none;
+  border:3px solid #ffc757;
+}
+
 /* Button  */
 .btn {
   border-radius: 1rem;
   font-size: 18px;
   background: #ffc757;
-  border: 0;
+  border: 2px solid #ffc757;
   color: #fff;
 }
 .tmn-1{
@@ -49,7 +63,12 @@ a{
 }
 .btn:hover {
   color: #fff;
-  background: #829399;
+  background: #2e4052;
+  border: 2px solid #ffc757;
+}
+.btn:focus,.btn:active {
+  outline: none;
+  box-shadow: none;
 }
 /* Informações Inválida */
 input.invalid{
@@ -148,7 +167,24 @@ input.invalid{
   transform-origin: left;
   animation: animate 0.3s linear forwards;
 }
+@keyframes animate {
+  100%{
+    transform: scaleX(1);
+  }
+}
 .progress-bar .step:last-child .bullet:before,
 .progress-bar .step:last-child .bullet:after{
   display: none;
+}
+.progress-bar .step .check{
+  position: absolute;
+  left: 50%;
+  top: 70%;
+  font-size: 15px;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+.progress-bar .step .check.active{
+  display: block;
+  color: #ffc757;
 }
