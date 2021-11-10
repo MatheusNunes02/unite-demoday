@@ -8,3 +8,52 @@
     font-family: var(--fonte);
     font-size: 20px;
 }
+
+body{
+    background-color: #829399;
+}
+
+
+#title{
+    font-size: 20px;
+    text-align: center;
+    color: #f5f5f5;
+    margin-bottom: 50px;
+    margin-top: 0;
+}
+
+#box{
+    padding-top: 30px;
+    padding-bottom: 60px;
+    background-color: var(--azulEscuro);
+    border-radius: 10px;
+}
+
+#bt{
+    padding-right: 40vw;
+    margin: 30;
+    margin-left: 30px;
+}
+
+#bt > input{
+    border-radius: 10px;
+    border-width: 1px;
+    margin-bottom: 8px;
+    padding-bottom: 2px;
+    border-color: var(--amarelo);
+    color: rgba(193, 205, 221, 0.733);
+}
+
+#bt > input:nth-child(4){
+    color: var(--branco);
+    background-color: var(--amarelo);
+}
+
+#bt > input:nth-child(3){
+    padding-right: 45vw;
+    margin: 10px;
+    margin-left: 0px;
+}
+
+
+
