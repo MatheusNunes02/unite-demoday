@@ -24,7 +24,7 @@ body{
 
 #box{
     padding-top: 30px;
-    padding-bottom: 60px;
+    padding-bottom: 30px;
     background-color: var(--azulEscuro);
     border-radius: 10px;
 }
@@ -45,14 +45,25 @@ body{
 }
 
 #bt > input:nth-child(4){
+    width: 90px;
     color: var(--branco);
     background-color: var(--amarelo);
+    margin-left: 46vw;
+    margin-top: 30px;
 }
+
+#bt > input:nth-child(4):hover{
+    color: var(--branco);
+    background-color: var(--azulEscuro);
+    transition: 0.2s;
+}
+
 
 #bt > input:nth-child(3){
     padding-right: 45vw;
     margin: 10px;
     margin-left: 0px;
+    height: 200px;
 }
 
 
