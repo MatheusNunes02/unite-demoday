@@ -30,7 +30,6 @@ body{
 }
 
 #bt{
-    padding-right: 40vw;
     margin: 30;
     margin-left: 30px;
 }
@@ -41,7 +40,7 @@ body{
     margin-bottom: 8px;
     padding-bottom: 2px;
     border-color: var(--amarelo);
-    color: rgba(193, 205, 221, 0.733);
+    color: rgba(0, 0, 0, 0.733);
 }
 
 #bt > input:nth-child(4){
@@ -58,13 +57,23 @@ body{
     transition: 0.2s;
 }
 
+#bt > input:nth-child(1){
+    margin-right: 400px;
+    width: 250px;
+}
 
-#bt > input:nth-child(3){
-    padding-right: 45vw;
+#bt > input:nth-child(2){
+    margin-right: 400px;
+    width: 250px;
+}
+
+
+#bt > textarea{
     margin: 10px;
     margin-left: 0px;
     height: 200px;
+    width: 53vw;
+    border-radius: 10px;
 }
-
 
 
