@@ -21,5 +21,13 @@ form {
   border: 0;
 }
 .btn {
-  border-radius: 1rem;
+  border-radius: 15px;
+  height: 40px;
+  text-shadow: 1px 1px 3px rgb(93, 93, 93);
+}
+
+.btn:hover{
+  background-color: transparent;
+  border: 2px solid #ffc757;
+  color: #ffc757;
 }
