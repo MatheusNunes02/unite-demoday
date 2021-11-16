@@ -52,7 +52,7 @@ h4{
   background: #2e4052;
 }
 .fa-circle{
-  width: 80%;
+  max-width: 80%;
   color: #ccc;
 }
 .fa-star{
