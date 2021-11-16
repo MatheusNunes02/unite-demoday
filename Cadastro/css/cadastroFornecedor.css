@@ -52,6 +52,7 @@ a{
   font-size: 18px;
   background: #ffc757;
   border: 2px solid #ffc757;
+  text-shadow: 1px 1px 3px rgb(93, 93, 93);
   color: #fff;
 }
 .tmn-1{
@@ -61,7 +62,7 @@ a{
   width: 8rem;
 }
 .btn:hover {
-  color: #fff;
+  color: #ffc757;
   background: #2e4052;
   border: 2px solid #ffc757;
 }

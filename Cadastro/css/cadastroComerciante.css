@@ -54,6 +54,7 @@ a{
   background: #ffc757;
   border: 2px solid #ffc757;
   color: #fff;
+  text-shadow: 1px 1px 3px rgb(93, 93, 93);
 }
 .tmn-1{
   width: 10rem;
@@ -62,7 +63,7 @@ a{
   width: 8rem;
 }
 .btn:hover {
-  color: #fff;
+  color: #ffc757;
   background: #2e4052;
   border: 2px solid #ffc757;
 }
