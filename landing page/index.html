@@ -14,6 +14,53 @@
 
 <body>
     <div class="inicio_landing">
+        <div class="container">
+            <section id='header'>
+                <div class="headerMenu">
+                    <div>
+                        <img src="img/logo_amerelo.png" alt="logo">
+                    </div>
+                    <div class="containerheaderMenu">
+                        <a href="#"><button class="botaoCriarconta">Cria conta</button></a>
+                        <a href="#"><button class="botaoEntrar">Entrar</button></a>
+                        <div class="dropdown">
+                            <button class="btn btn-secondary" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            <div class="gambiarraTracoHamburguer">
+                            <div class="tracoHamburguer"></div>
+                            <div class="tracoHamburguer"></div>
+                            <div class="tracoHamburguer"></div>
+                            </div>  
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            
+                              <li><a class="dropdown-item" href="#parteDois">Filtre</a></li>
+                              <li><a class="dropdown-item" href="#parteTres">Vantagens</a></li>
+                              <li><a class="dropdown-item" href="#parteQuatro">Chat interativo</a></li>
+                              <li><a class="dropdown-item" href="#parteCinco">Fale conosco</a></li>
+                            </ul>
+                          </div>
+                    </div>
+                </div>
+            </section>
+            <section id='content' class="">
+                <div class="container">
+                    <div class="row gy-3 d-flex justify-content-center align-items-center mt-5">
+                        <div class="col-lg-4">
+                            <div class='title mt-3 ajustarTexto'>Unite, una-se com fornecedores <br> e comerciantes!</div>
+                            <div class='text mt-3 ajustarTexto'>Sua plataforma simples e segura para buscar fornecedores e comerciantes confiáveis.</div>
+                        </div>
+                        <div class="col-lg-6 d-flex justify-content-center">
+                            <img src="img/img shakehand.svg" class="img-fluid img1">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+    </div>
+
+<!--
+    <div class="inicio_landing">
         <div class="container mt-3">
             <section id='header'>
                 <div class="row gy-3 justify-content-center align-items-center">
@@ -44,10 +91,15 @@
         </div>
 
     </div>
+-->
+
+    
+
+
 
 <!-- SEGUNDA SEÇÃO DA LANDING PAGE -->
 
-    <div class="parteDois_landing">
+    <div class="parteDois_landing" id="parteDois">
         <div class="container">
                 <h2>Filtre pelos melhores fornecedores & compradores</h2>
                 <p>Filtre pelo tipo de produto do fornecedor, sua reputação e<br> localização com facilidade!</p>
@@ -59,7 +111,7 @@
 
 <!--SEÇÃO DOS CARDS -->
 
-    <div class="parteTres_landing">
+    <div class="parteTres_landing" id="parteTres">
         <div class="boxcard_parteTres container">
             <div class="card_parteTres">
                 <img src="img/1imagem1_card.svg">
@@ -83,7 +135,7 @@
 
 <!--SEÇÃO FALANDO DO CAHT INTERATIVO-->
 
-    <div class="partequatro_landing">
+    <div class="partequatro_landing" id="parteQuatro">
         <div class="container">
             <div class="row">
                 <div class="col-md-7 col-sm-12">
@@ -103,7 +155,7 @@
 
 <!-- PARTE DAS DÚVIDAS!!!!-->
 
-    <div class="partecinco_landing">
+    <div class="partecinco_landing" id="parteCinco">
         <div class="texto_partecinco">
             <div class="title">Ficou com alguma dúvida?</div>
             <div class="text">Se a sua dúvida não estiver nas perguntas frequentes, fala com a gente!</div>
@@ -126,7 +178,7 @@
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="headingTwo">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                      Existe algum limite de fornecedores ou comerciantes que eu posso pesquisar?
+                      Existe algum limite de fornecedores ou comerciantes que eu possa pesquisar?
                     </button>
                   </h2>
                   <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">

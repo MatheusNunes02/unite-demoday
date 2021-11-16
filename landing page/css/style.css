@@ -15,7 +15,7 @@
     background-color: var(--branco);
     padding-bottom: 90px;
 }
-
+/*
 .logo{
     width: 100px;
     justify-self: flex-start;
@@ -31,7 +31,6 @@
 }
 
 .transparentBtn:hover{
-    /* border: solid 1.8px var(--amarelo); */
     background-color: transparent;
     color: var(--amarelo);
 }
@@ -55,6 +54,79 @@
     background-color: transparent;
     color: var(--amarelo);
 }
+*/
+
+.headerMenu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 15px;
+}
+
+.headerMenu img{
+    width: 100px;
+}
+
+.containerheaderMenu{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.botaoCriarconta{
+    border: none;
+    background-color: transparent;
+}
+
+.botaoEntrar{
+    background-color: var(--amarelo);
+    border-radius: 15px;
+    border: 0;
+    width: 130px;
+    height: 45px;
+    color: white;
+    transition: 0.2s;
+
+}
+
+.botaoEntrar:hover{
+    background-color: transparent;
+    border: 2px solid var(--amarelo);
+    color: var(--amarelo);
+}
+
+.btn{
+    background-color: transparent;
+    border: 0px;
+}
+
+.btn:hover{
+    background-color: transparent;
+}
+
+.btn-secondary:focus{
+    background-color: transparent;
+    box-shadow: none;
+}
+
+
+.gambiarraTracoHamburguer{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.tracoHamburguer{
+    width: 25px;
+    height: 3px;
+    background-color: var(--amarelo);
+
+}
+
 
 .title{
     font-weight: bolder;
@@ -124,10 +196,6 @@
 
 }
 
-.card_parteTres:hover{
-    background-color: var(--azulClaro);
-    transition: 0.5s;
-}
 
 .card_parteTres img{
     padding: 10px 0px 20px 0px;
@@ -352,8 +420,7 @@
 
 
 #back-to-top:hover {
-    background-color: transparent;
-    border: solid 2px var(--amarelo);
+    background-color: var(--branco);
 }
 
 #back-to-top.transition {
