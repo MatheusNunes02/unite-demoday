@@ -58,7 +58,7 @@
         </div>
 
         <section class="tab-pane text-center">
-            <div class="tab form rounded-3 aln-1">
+            <div class="tab form rounded-3 aln">
                 <div class="mb-3">
                     <input type="text" class="form-control" placeholder="Nome completo" aria-label="Nome completo">
                 </div>
@@ -71,22 +71,22 @@
                 <div class="mb-5">
                     <input type="number" class="form-control" id="cpf" placeholder="CPF">
                 </div>
-                <div>
+                <div class="separar">
                     <button class="btn tmn-1" type="button" id="nextBtn" onclick="nextPrev(1)">Avançar</button>
                 </div>
             </div>
         </section>
 
         <section class="tab-pane text-center">
-            <div class="tab form rounded-3 aln">
+            <div class="tab form rounded-3 aln-1">
                 <div class="mb-4">
                     <input type="number" class="form-control" placeholder="CEP" aria-label="CEP">
                 </div>
                 <div class="mb-4">
                     <input type="text" class="form-control" placeholder="Endereço" aria-label="Endereço">
                 </div>
-                <div>
-                    <button type="button" class="btn tmn-2 me-2 mt-5" id="prevBtn" onclick="nextPrev(-1)">Voltar</button>
+                <div class="separar2">
+                    <button type="button" class="btn tmn-2 me-3 mt-5" id="prevBtn" onclick="nextPrev(-1)">Voltar</button>
                     <button class="btn tmn-2 mt-5" type="button" id="nextBtn" onclick="nextPrev(1)">Avançar</button>
                 </div>
             </div>
@@ -94,7 +94,7 @@
 
         <section class="tab-pane text-center">
             <div class="tab form rounded-3 aln-2">
-                <div class="mb-3 mb-5">
+                <div class="mb-3 mb-5 espaco">
                     <select class="form-select text-center" aria-label="Selecione categoria">
                         <option selected>Categoria</option>
                         <option value="1">One</option>
@@ -102,27 +102,27 @@
                         <option value="3">Three</option>
                     </select>
                 </div>
-                <div>
-                    <button type="button" class="btn tmn-2 me-2" id="prevBtn" onclick="nextPrev(-1)">Voltar</button>
+                <div class="separar2">
+                    <button type="button" class="btn tmn-2 me-3" id="prevBtn" onclick="nextPrev(-1)">Voltar</button>
                     <button class="btn tmn-2" type="button" id="nextBtn" onclick="nextPrev(1)">Avançar</button>
                 </div>
             </div>
         </section>
 
         <section class="tab-pane text-center">
-            <div class="tab form rounded-3 aln-1">
+            <div class="tab form rounded-3 aln-3">
                 <div class="picture-container">
-                    <div class="mb-3 picture">
+                    <div class="mb-5 picture">
                         <!-- <img src="img/default-avatar.jpg" class="picture-src" id="PicturePreview" title=""> -->
                         <input type="file" id="picture">
                     </div>
                 </div>
-                <div class="mb-5">
+                <div class="mb-4">
                     <textarea class="form-control text-center" id="FormControlTextarea" rows="3"
                         placeholder="Sobre"></textarea>
                 </div>
-                <div>
-                    <button type="button" class="btn tmn-2 me-2" id="prevBtn"
+                <div class="separar">
+                    <button type="button" class="btn tmn-2 me-3" id="prevBtn"
                         onclick="nextPrev(-1)">Voltar</button>
                     <button class="btn tmn-2" type="submit">Finalizar</button>
                 </div>
