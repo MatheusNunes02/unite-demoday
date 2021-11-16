@@ -38,10 +38,11 @@
 
 .yellowBtn{
     background-color: var(--amarelo);
+    text-shadow: 1px 1px 3px rgb(163, 163, 163);
     border-radius: 10px;
     width: 150px;
     color: var(--branco);
-    border: solid 1.8px transparent;
+    border: solid 2px transparent;
     padding: 5px;
     transition: 0.2s;
     box-sizing: border-box;
@@ -49,7 +50,8 @@
 }
 
 .yellowBtn:hover{
-    border: solid 1.8px var(--amarelo);
+    text-shadow: none;
+    border: solid 2px var(--amarelo);
     background-color: transparent;
     color: var(--amarelo);
 }
@@ -194,6 +196,7 @@
     width: 180px;
     height: 50px;
     border-radius: 15px;
+    text-shadow: 1px 1px 3px rgb(126, 126, 126);
     background-color: var(--amarelo);
     color: white;
     margin: 80px 0px;
@@ -201,7 +204,8 @@
 }
 
 .botaoFaleconosco:hover{
-    border: solid 1.8px var(--amarelo);
+    text-shadow: none;
+    border: solid 2px var(--amarelo);
     background-color: transparent;
     color: var(--amarelo);
 }
