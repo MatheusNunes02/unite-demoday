@@ -15,46 +15,7 @@
     background-color: var(--branco);
     padding-bottom: 90px;
 }
-/*
-.logo{
-    width: 100px;
-    justify-self: flex-start;
-}
 
-.transparentBtn{
-    border: solid 0px transparent;
-    border-radius: 10px;
-    width: 150px;
-    padding: 5px;
-    transition: 0.2s;
-    background-color: transparent;
-}
-
-.transparentBtn:hover{
-    background-color: transparent;
-    color: var(--amarelo);
-}
-
-.yellowBtn{
-    background-color: var(--amarelo);
-    text-shadow: 1px 1px 3px rgb(163, 163, 163);
-    border-radius: 10px;
-    width: 150px;
-    color: var(--branco);
-    border: solid 2px transparent;
-    padding: 5px;
-    transition: 0.2s;
-    box-sizing: border-box;
-
-}
-
-.yellowBtn:hover{
-    text-shadow: none;
-    border: solid 2px var(--amarelo);
-    background-color: transparent;
-    color: var(--amarelo);
-}
-*/
 
 .headerMenu{
     display: flex;
@@ -72,10 +33,22 @@
 .containerheaderMenu{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     gap: 40px;
 }
+
+.navbar-expand-lg{
+    background-color:transparent;
+    
+}
+.navbar-light .navbar-nav .nav-link{
+    color:var(--amarelo);
+}
+
+
+
+
 
 .botaoCriarconta{
     border: none;
@@ -84,6 +57,7 @@
 
 .botaoEntrar{
     background-color: var(--amarelo);
+    text-shadow: 1px 1px 3px rgb(126, 126, 126);
     border-radius: 15px;
     border: 0;
     width: 130px;
@@ -98,6 +72,15 @@
     border: 2px solid var(--amarelo);
     color: var(--amarelo);
 }
+
+.containerBotoesinicio{
+    display: flex;
+    column-gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+/*
 
 .btn{
     background-color: transparent;
@@ -126,7 +109,7 @@
     background-color: var(--amarelo);
 
 }
-
+*/
 
 .title{
     font-weight: bolder;
@@ -189,7 +172,7 @@
     height: 520px;
     width: 340px;
     background-color: var(--azulEscuro);
-    border-radius: 15px;
+    border-radius: 0px;
     text-align: center;
     padding: 40px 20px 20px 20px;
     color: var(--branco);
