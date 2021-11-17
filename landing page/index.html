@@ -21,25 +21,28 @@
                         <img src="img/logo_amerelo.png" alt="logo">
                     </div>
                     <div class="containerheaderMenu">
-                        <a href="#"><button class="botaoCriarconta">Cria conta</button></a>
-                        <a href="#"><button class="botaoEntrar">Entrar</button></a>
-                        <div class="dropdown">
-                            <button class="btn btn-secondary" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                            <div class="gambiarraTracoHamburguer">
-                            <div class="tracoHamburguer"></div>
-                            <div class="tracoHamburguer"></div>
-                            <div class="tracoHamburguer"></div>
-                            </div>  
-                            </button>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <nav class="navbar navbar-expand-lg navbar-light">
+                            <div class="container-fluid">
                             
-                              <li><a class="dropdown-item" href="#parteDois">Filtre</a></li>
-                              <li><a class="dropdown-item" href="#parteTres">Vantagens</a></li>
-                              <li><a class="dropdown-item" href="#parteQuatro">Chat interativo</a></li>
-                              <li><a class="dropdown-item" href="#parteCinco">Fale conosco</a></li>
-                            </ul>
-                          </div>
+                              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                              </button>
+                              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                                <div class="navbar-nav">
+                                  <a class="nav-link" href="#">Filtre</a>
+                                  <a class="nav-link" href="#">Vantagens</a>
+                                  <a class="nav-link" href="#">Chat interativo</a>
+                                  <a class="nav-link" href="#">Fale conosco</a>
+                                </div>
+                              </div>
+                            </div>
+                          </nav>
+                        
                     </div>
+                    <div class="containerBotoesinicio">
+                    <a href="#"><button class="botaoCriarconta">Cria conta</button></a>
+                    <a href="#"><button class="botaoEntrar">Entrar</button></a>
+                </div>
                 </div>
             </section>
             <section id='content' class="">
@@ -165,11 +168,11 @@
             <div class="accordion" id="accordionExample">
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="headingOne">
-                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                       Os usuarios possuem Dashboard?
                     </button>
                   </h2>
-                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                  <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
                       Sim. Os usuarios possuem um simples e minimalista dashboard com apenas as informações necessarias!
                     </div>
