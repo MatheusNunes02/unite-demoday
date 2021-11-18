@@ -16,62 +16,71 @@
 </head>
 
 <body>
-    <!--HEADER "IMG" E A FOTO DA DASHBOARD-->
     <header>
       <div class="container">
-          <div class=" d-flex align-items-center justify-content-between py-4">
-              <div class="col-md-3">
-                  <img class="img-fluid" width="70" src="img/logo_amerelo.png">
-              </div>
-              <a href="#">
-                  <div class="d-flex align-items-center">
-                      <h6 class="me-3">Dashboard</h6>
-                      <img class="img-fluid" width="70" src="img/fotoPerfil.png" alt="Foto Perfil">
-                  </div>
-              </a>
+        <div class="containerHeaderall">
+          <div>
+            <a href="#">
+            <img src="img/logo_amerelo.png">
+          </a>
           </div>
-      </div>
-  </header>
-
-    <!-- DIV BARRA DE PESQUISA E FILTROS -->
-                <!-- BOTÃO DROPDOWN 'ORDERNAR POR'-->
-        <div class="filtroEpesquisar container">
-            <div class="dropdown">
-                <button class="botaoDropdown btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                    ordernar por 
+          <div>
+            <nav class="navbar navbar-expand-lg navbar-light " id="backgroundbotoes">
+              <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
                 </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                  <li><a class="dropdown-item" href="#">Lorem Ipsum</a></li>
-                  <li><a class="dropdown-item" href="#">Lorem Ipsum</a></li>
-                  <li><a class="dropdown-item" href="#">Lorem Ipsum</a></li>
-                </ul>
-              </div>
-                <!-- BOTÃO DROPDOWN CATEGORIA-->
-              <div class="dropdown">
-                <button class="botaoDropdown btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                    Categoria
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                  <li><a class="dropdown-item" href="#">Lorem Ipsum</a></li>
-                  <li><a class="dropdown-item" href="#">Lorem Ipsum</a></li>
-                  <li><a class="dropdown-item" href="#">Lorem Ipsum</a></li>
-                </ul>
-              </div>
-                <!-- INPUT SEARCH -->
-                <div class="input-group inputPesquisar">
-                    <input type="text" class="form-control" placeholder="Pesquise por fornecedores" aria-label="Recipient's username" aria-describedby="basic-addon2">
-                    <div class="input-group-append">
-                    <button class="botaoInputpesquisar btn btn-outline-secondary" type="button"><img src="img/lupa.svg"></button>
-                    </div>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                  <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Ordernar por
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Filtrar
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      </ul>
+                    </li>
+                  </ul>
                 </div>
-        </div> 
-        <!-- FINAL DIV BARRA DE PESQUISA E FILTROS-->
+              </div>
+            </nav>
+          </div>
+          
+          <div class="input-group inputPesquisar">
+              <input type="text" class="form-control" placeholder="Busque por fornecedores" aria-label="Recipient's username" aria-describedby="basic-addon2">
+              <div class="input-group-append">
+              <button class="botaoInputpesquisar btn btn-outline-secondary" type="button"><img src="img/lupa.svg"></button>
+              </div>
+          </div>
+          
+          <div class="containerImperfil">
+            <a href="#">
+            <img src="img/fotoPerfil.png">
+          </a>
+          </div>
+          
+        </div>
+      </div>
+    </header>
 
-
-        <!-- TEMPLATE CARD FORNECEDOR-->
-        <div class="container containerCardFornecedor">
+      <div class="container containerCardFornecedor">
+        <div class="cardExemplo"> 
 
         </div>
+
+      </div>
    
 
 
@@ -80,3 +89,39 @@
 </body>
 
 </html>
+
+
+<!--
+  <div class="filtroEpesquisar">
+  <div class="dropdown">
+      <button class="botaoDropdown btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+          ordernar por 
+      </button>
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+        <li><a class="dropdown-item" href="#">Lorem Ipsum</a></li>
+        <li><a class="dropdown-item" href="#">Lorem Ipsum</a></li>
+        <li><a class="dropdown-item" href="#">Lorem Ipsum</a></li>
+      </ul>
+    </div>
+      
+    <div class="dropdown">
+      <button class="botaoDropdown btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+          Categoria
+      </button>
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+        <li><a class="dropdown-item" href="#">Lorem Ipsum</a></li>
+        <li><a class="dropdown-item" href="#">Lorem Ipsum</a></li>
+        <li><a class="dropdown-item" href="#">Lorem Ipsum</a></li>
+      </ul>
+    </div>
+      
+      <div class="input-group inputPesquisar">
+          <input type="text" class="form-control" placeholder="Pesquise por fornecedores" aria-label="Recipient's username" aria-describedby="basic-addon2">
+          <div class="input-group-append">
+          <button class="botaoInputpesquisar btn btn-outline-secondary" type="button"><img src="img/lupa.svg"></button>
+          </div>
+      </div>
+</div>
+
+-->
+
