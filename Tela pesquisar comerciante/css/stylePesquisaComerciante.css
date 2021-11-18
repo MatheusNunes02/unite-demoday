@@ -17,40 +17,6 @@ header{
     padding-bottom: 10px;
 }
 
-.navbar{
-    padding: 0px;
-}
-
-.container-fluid{
-    padding: 3.5px;
-}
-
-.nav-item{
-    text-align: center;
-    width: 160px;
-}
-
-.navbar-nav{
-    gap: 10px;
-}
-
-
-.nav-item{
-    background-color: var(--amarelo);
-    border-radius: 15px;
-}
-
-.navbar-light .navbar-nav .nav-link{
-    color: white;
-}
-
-.navbar-light .navbar-toggler{
-    border: none;
-}
-
-.navbar-toggler:focus{
-    box-shadow: none;
-}
 
 .containerHeaderall{
     display: flex;
@@ -62,6 +28,35 @@ header{
 .containerHeaderall img{
     width: 72px;
 }
+
+.containerBotaofiltro{
+    padding: 10px 0px 10px 0px ;
+}
+
+.btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: transparent;
+    border: 0px;
+    width: 120px;
+    gap: 20px;
+}
+
+.btn img{
+    width: 30px;
+}
+
+.btn:focus{
+    box-shadow: none;
+}
+
+.botaoInputpesquisar{
+    width: 60px;
+}
+
 
 .inputPesquisar{
     width: 550px;
@@ -96,4 +91,13 @@ header{
 
 .containerImperfil img:hover{
     border: 2px solid transparent;
+}
+
+
+.modal-body{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
 }
