@@ -54,8 +54,8 @@ header {
 /*FIM ESTILOS HEADER*/
 
 .filtroEpesquisar{
-    margin-top: 60px;
-    height: 120px;
+    
+    
     width: 100%;
     display: flex;
     justify-content: center;
