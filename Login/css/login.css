@@ -23,7 +23,13 @@ p{
 }
 
 .fontAmarela:hover, .fontPequena:hover{
-  color: blue;
+  color: #2e4052;
+}
+
+.containerEsqueciSenha{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 .fontPequena{
@@ -31,6 +37,7 @@ p{
   font-size: 13px;
   text-align: right;
 }
+
 
 /* FORM */
 form {
