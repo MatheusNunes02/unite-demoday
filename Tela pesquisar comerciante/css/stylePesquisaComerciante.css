@@ -17,6 +17,10 @@ header{
     padding-bottom: 10px;
 }
 
+body{
+    background-color: var(--branco);
+}
+
 
 .containerHeaderall{
     display: flex;
@@ -81,10 +85,6 @@ header{
    
 }
 
-.botaoInputpesquisar:hover{
-    background-color: rgb(255, 157, 0);
-}
-
 .containerImperfil img{
     width: 50px;
 }
@@ -100,4 +100,92 @@ header{
     justify-content: center;
     align-items: flex-start;
     gap: 20px;
+}
+
+.containerCardFornecedor {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    background-color: var(--branco);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    gap: 25px;
+    flex-direction: column;
+}
+
+.cardExemplo{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+
+    border-radius: 15px;
+    background-color: white;
+    width: 100%;
+    min-height: 200px;
+    max-height: 100%;
+    box-shadow: 0px 6px 8px rgb(221, 221, 221);
+    padding: 15px 60px 15px 50px;
+}
+
+.divFotoperfil img{
+    width: 150px;
+}
+
+.containerNomeCateoria{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 50%;
+    height: 80%;
+}
+
+.containerNomeCateoria h4{
+    color: rgb(207, 207, 207);
+}
+
+.containerBotaoStar{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.containerBotaoStar button{
+    border: 0px;
+    width: 170px;
+    height: 50px;
+    border-radius: 15px;
+    background-color: var(--amarelo);
+    color: white;
+    transition: 0.2s;
+}
+
+.containerBotaoStar button:hover{
+    background-color: transparent;
+    border: 2px solid var(--amarelo);
+    color: var(--amarelo);
+}
+
+@media (max-width: 1000px) {
+
+    .cardExemplo{
+        flex-direction: column;
+    }
+
+    .containerNomeCateoria{
+        text-align: center;
+    }
+    
+    .containerBotaoStar{
+        width: 100%;
+    }
+    
 }

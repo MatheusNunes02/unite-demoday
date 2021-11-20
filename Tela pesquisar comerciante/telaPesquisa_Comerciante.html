@@ -15,7 +15,6 @@
     <title>Unite - Pesquisar</title>
 </head>
 
-<body>
     <header>
       <div class="container">
         <div class="containerHeaderall">
@@ -28,7 +27,7 @@
           <div class="input-group inputPesquisar">
               <input type="search" class="form-control" placeholder="Busque por fornecedores" aria-label="Recipient's username" aria-describedby="basic-addon2">
               <div class="input-group-append">
-              <button class="botaoInputpesquisar btn-outline-secondary" type="button"><img src="img/lupa.svg"></button>
+              <button class="botaoInputpesquisar"><img src="img/lupa.svg"></button>
               </div>
           </div>
           
@@ -42,54 +41,97 @@
       </div>
     </header>
 
-      <div class="container containerCardFornecedor">
-          
-         <div class="containerBotaofiltro">
-          <!-- Button trigger modal -->
-          
-              <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                <img src="img/filter.svg"> 
-                Filtrar
-              </button>
-       
+    <div class="container containerBotaofiltro">
+      <!-- Button trigger modal -->
+      
+          <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <img src="img/filter.svg"> 
+            Filtrar
+          </button>
+   
 
-              <!-- Modal -->
-              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLabel">Filtrar</h5>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-
-                    <div class="modal-body">
-
-                    <div>
-                      <h6>Ordernar por</h6>
-                      <ul class="list-group list-group-flush">
-                        <li class="list-group-item">An item</li>
-                        <li class="list-group-item">A second item</li>
-                        <li class="list-group-item">A third item</li>
-                      </ul><br>
-                    </div>
-
-                    <div>
-                      
-
-                    </div>
-
-                  </div>
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Filtrar</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
+
+                <div class="modal-body">
+
+
+                  <!--ITEMS (FILTRO) DENTRO DO MODAL-->
+                <div>
+                  <h6>Ordernar por</h6>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">An item</li>
+                    <li class="list-group-item">A second item</li>
+                    <li class="list-group-item">A third item</li>
+                  </ul><br>
+                </div>
+
+                <div>
+                  <h6>Categoria</h6>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">An item</li>
+                    <li class="list-group-item">A second item</li>
+                    <li class="list-group-item">A third item</li>
+                    <li class="list-group-item">An item</li>
+                    <li class="list-group-item">A second item</li>
+                    <li class="list-group-item">A third item</li>
+                    <li class="list-group-item">An item</li>
+                    <li class="list-group-item">A second item</li>
+                    <li class="list-group-item">A third item</li>
+                  </ul><br>
+                </div>
+
               </div>
-        </div> 
+            </div>
+          </div>
 
-        
-        
-        <div class="cardExemplo"> 
+      
+    </div> 
+    </div>
 
+    <div class="containerCardFornecedor container ">
+
+      <!--CARD EXEMPLO-->
+      <div class="cardExemplo"> 
+        <div class="divFotoperfil">
+          <img src="img/fotoPerfil.png">
         </div>
-
+        <div class="containerNomeCateoria">
+          <h3>NOME DO FORNECEDOR</h3>
+          <h4>CATEGORIA</h4>
+          <div>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in magna vel enim viverra tempor vitae
+               nec lectus. In a tempor erat. Maecenas vestibulum, augue a fringilla maximus,
+               turpis dui cursus erat, vel aliquet purus dolor a lectus.
+            </p>
+          </div>
+        </div>
+        <div class="containerBotaoStar">
+          <a href="#"><button>Entre em contato</button></a>
+          <div>
+            <img src="img/star.png"> 
+            <img src="img/star.png"> 
+            <img src="img/star.png"> 
+            <img src="img/star.png"> 
+            <img src="img/star.png"> 
+          </div>
+        </div>
       </div>
+      <!--FIM CARD EXEMPLO-->
+
+      
+    </div>
+    
+
+        
+      
    
 
 
