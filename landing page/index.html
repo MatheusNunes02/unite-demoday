@@ -14,6 +14,56 @@
 
 <body>
     <div class="inicio_landing">
+        <div class="container">
+            <section id='header'>
+                <div class="headerMenu">
+                    <div>
+                        <img src="img/logo_amerelo.png" alt="logo">
+                    </div>
+                    <div class="containerheaderMenu">
+                        <nav class="navbar navbar-expand-lg navbar-light">
+                            <div class="container-fluid">
+                            
+                              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                              </button>
+                              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                                <div class="navbar-nav">
+                                  <a class="nav-link" href="#parteDois">Filtre</a>
+                                  <a class="nav-link" href="#parteTres">Vantagens</a>
+                                  <a class="nav-link" href="#parteQuatro">Chat interativo</a>
+                                  <a class="nav-link" href="#parteCinco">Fale conosco</a>
+                                </div>
+                              </div>
+                            </div>
+                          </nav>
+                        
+                    </div>
+                    <div class="containerBotoesinicio">
+                    <a href="#"><button class="botaoCriarconta">Cria conta</button></a>
+                    <a href="#"><button class="botaoEntrar">Entrar</button></a>
+                </div>
+                </div>
+            </section>
+            <section id='content' class="">
+                <div class="container">
+                    <div class="row gy-3 d-flex justify-content-center align-items-center mt-5">
+                        <div class="col-lg-4">
+                            <div class='title mt-3 ajustarTexto'>Unite, una-se com fornecedores <br> e comerciantes!</div>
+                            <div class='text mt-3 ajustarTexto'>Sua plataforma simples e segura para buscar fornecedores e comerciantes confiáveis.</div>
+                        </div>
+                        <div class="col-lg-6 d-flex justify-content-center">
+                            <img src="img/img shakehand.svg" class="img-fluid img1">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+    </div>
+
+<!--
+    <div class="inicio_landing">
         <div class="container mt-3">
             <section id='header'>
                 <div class="row gy-3 justify-content-center align-items-center">
@@ -44,10 +94,15 @@
         </div>
 
     </div>
+-->
+
+    
+
+
 
 <!-- SEGUNDA SEÇÃO DA LANDING PAGE -->
 
-    <div class="parteDois_landing">
+    <div class="parteDois_landing" id="parteDois">
         <div class="container">
                 <h2>Filtre pelos melhores fornecedores & compradores</h2>
                 <p>Filtre pelo tipo de produto do fornecedor, sua reputação e<br> localização com facilidade!</p>
@@ -59,7 +114,7 @@
 
 <!--SEÇÃO DOS CARDS -->
 
-    <div class="parteTres_landing">
+    <div class="parteTres_landing" id="parteTres">
         <div class="boxcard_parteTres container">
             <div class="card_parteTres">
                 <img src="img/1imagem1_card.svg">
@@ -83,7 +138,7 @@
 
 <!--SEÇÃO FALANDO DO CAHT INTERATIVO-->
 
-    <div class="partequatro_landing">
+    <div class="partequatro_landing" id="parteQuatro">
         <div class="container">
             <div class="row">
                 <div class="col-md-7 col-sm-12">
@@ -103,7 +158,7 @@
 
 <!-- PARTE DAS DÚVIDAS!!!!-->
 
-    <div class="partecinco_landing">
+    <div class="partecinco_landing" id="parteCinco">
         <div class="texto_partecinco">
             <div class="title">Ficou com alguma dúvida?</div>
             <div class="text">Se a sua dúvida não estiver nas perguntas frequentes, fala com a gente!</div>
@@ -113,11 +168,11 @@
             <div class="accordion" id="accordionExample">
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="headingOne">
-                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                       Os usuarios possuem Dashboard?
                     </button>
                   </h2>
-                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                  <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
                       Sim. Os usuarios possuem um simples e minimalista dashboard com apenas as informações necessarias!
                     </div>
@@ -126,7 +181,7 @@
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="headingTwo">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                      Existe algum limite de fornecedores ou comerciantes que eu posso pesquisar?
+                      Existe algum limite de fornecedores ou comerciantes que eu possa pesquisar?
                     </button>
                   </h2>
                   <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">

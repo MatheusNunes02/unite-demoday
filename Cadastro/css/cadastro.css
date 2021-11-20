@@ -2,32 +2,49 @@ body {
   background: #829399;
   font-family: 'Roboto', sans-serif;
 }
-
 form {
   background: #2e4052;
   color: #fff;
-  width: 330px;
-  max-width: 400px;
-  padding: 6rem 3rem 6rem 3rem;
+  max-width: 650px;
+  padding: 3rem 3rem 8rem 3rem;
 
-  margin: auto;
+  margin: 0 auto;
+}
+.mgn{
+  padding-top: 4rem;
 }
 .rounded-3 {
   border-radius: 1rem !important;
 }
-
-.btn-primary {
-  background-color: #ffc757;
-  border: 0;
+/* TAMANHO BUTTON */
+.tmn-1 {
+  width: 21rem;
 }
 .btn {
   border-radius: 15px;
-  height: 40px;
   text-shadow: 1px 1px 3px rgb(93, 93, 93);
+  background: #ffc757;
+  color: #fff;
+  border: 2px solid #ffc757;
+  margin: 0 auto;
+}
+.btn:focus,
+.btn:active {
+  outline: none;
+  box-shadow: none;
 }
 
 .btn:hover{
   background-color: transparent;
   border: 2px solid #ffc757;
   color: #ffc757;
+}
+
+@media (max-width: 700px){
+  form {
+    max-width: 330px;
+  }
+  .tmn-1 {
+    width: 12rem;
+  }
 }

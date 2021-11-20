@@ -23,7 +23,13 @@ p{
 }
 
 .fontAmarela:hover, .fontPequena:hover{
-  color: blue;
+  color: #2e4052;
+}
+
+.containerEsqueciSenha{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 .fontPequena{
@@ -33,34 +39,14 @@ p{
 }
 
 
-
 /* FORM */
 form {
   background: #829399;
   color: #fff;
-  width: 350px;
-  max-width: 400px;
+  max-width: 650px;
   height: 600px;
   margin: auto;
 }
 .rounded-3 {
   border-radius: 1rem !important;
-}
-/* Tamanho do Form */
-.aln{
-  padding: 8rem 2rem 8rem 2rem;
-}
-.aln-1{
-  padding: 5rem 2rem 5rem 2rem;
-}
-/* Class input  */
-.form-control {
-  border-radius: 0.75rem;
-  border: 1.5px solid #ffc757;
-}
-/* Button  */
-.btn {
-  border-radius: 1rem;
-  background: #ffc757;
-  border: 0;
 }

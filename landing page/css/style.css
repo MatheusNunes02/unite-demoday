@@ -16,44 +16,52 @@
     padding-bottom: 90px;
 }
 
-.logo{
+.headerMenu{
+    padding-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.headerMenu img{
     width: 100px;
-    justify-self: flex-start;
 }
 
-.transparentBtn{
-    border: solid 0px transparent;
-    border-radius: 10px;
-    width: 150px;
-    padding: 5px;
+.containerBotoesinicio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 30px;
+}
+
+.botaoCriarconta{
+    border: 0;
+    background-color: transparent;
     transition: 0.2s;
-    background-color: transparent;
 }
 
-.transparentBtn:hover{
-    /* border: solid 1.8px var(--amarelo); */
-    background-color: transparent;
+.botaoCriarconta:hover{
     color: var(--amarelo);
 }
 
-.yellowBtn{
+.botaoEntrar{
+    width: 130px;
+    height: 50px;
+    border-radius: 15px;
+    border: 2px solid var(--amarelo);
+    text-shadow: 1px 1px 3px rgb(126, 126, 126);
     background-color: var(--amarelo);
-    text-shadow: 1px 1px 3px rgb(163, 163, 163);
-    border-radius: 10px;
-    width: 150px;
-    color: var(--branco);
-    border: solid 2px transparent;
-    padding: 5px;
+    color: white;
     transition: 0.2s;
-    box-sizing: border-box;
-
 }
 
-.yellowBtn:hover{
-    text-shadow: none;
-    border: solid 2px var(--amarelo);
+.botaoEntrar:hover{
     background-color: transparent;
     color: var(--amarelo);
+    text-shadow: none;
+    
+
 }
 
 .title{
@@ -117,17 +125,13 @@
     height: 520px;
     width: 340px;
     background-color: var(--azulEscuro);
-    border-radius: 15px;
+    border-radius: 5px;
     text-align: center;
     padding: 40px 20px 20px 20px;
     color: var(--branco);
 
 }
 
-.card_parteTres:hover{
-    background-color: var(--azulClaro);
-    transition: 0.5s;
-}
 
 .card_parteTres img{
     padding: 10px 0px 20px 0px;
@@ -327,7 +331,7 @@
     height: 50px;
     padding: 5px;
     border-radius: 15px;
-    border: 0px;
+    border: 2px solid var(--amarelo);
     box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.4);
     background-color: var(--amarelo);
     animation: fadeAnimation 0.5s;
@@ -352,9 +356,10 @@
 
 
 #back-to-top:hover {
-    background-color: transparent;
+    background-color: white;
     border: solid 2px var(--amarelo);
 }
+
 
 #back-to-top.transition {
     background-color: var(--branco);
