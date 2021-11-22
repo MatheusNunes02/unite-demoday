@@ -1,9 +1,11 @@
+@import url(../global/global.css);
+
 /* Button  */
 .btn {
   border-radius: 1rem;
   font-size: 18px;
-  background: #ffc757;
-  border: 2px solid #ffc757;
+  background: var(--amarelo);
+  border: 2px solid var(--amarelo);
   color: #fff;
   text-shadow: 1px 1px 3px rgb(93, 93, 93);
 }
@@ -11,9 +13,9 @@
   width: 16rem;
 }
 .btn:hover {
-  color: #ffc757;
+  color: var(--amarelo);
   background: transparent;
-  border: 2px solid #ffc757;
+  border: 2px solid var(--amarelo);
 }
 .btn:focus,
 .btn:active {
@@ -24,13 +26,13 @@
 .form-control,
 .form-select {
   border-radius: 0.75rem;
-  border: 2px solid #ffc757;
+  border: 2px solid var(--amarelo);
 }
 .form-control:focus,
 .form-control:active{
   outline: none;
   box-shadow: none;
-  border:3px solid #ffc757;
+  border:3px solid var(--amarelo);
 }
 /* Tamanho do Form */
 .aln-1{

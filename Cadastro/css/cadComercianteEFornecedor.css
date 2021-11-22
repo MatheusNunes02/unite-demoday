@@ -1,5 +1,7 @@
+@import url(../global/global.css);
+
 body {
-  background: #829399;
+  background: var(--azulClaro);
   font-family: "Roboto", sans-serif;
   box-sizing: border-box;
   margin-bottom: 5rem;
@@ -9,7 +11,7 @@ a {
 }
 /* FORM */
 .form {
-  background: #2e4052;
+  background: var(--azulEscuro);
   color: #fff;
   width: 650px;
   max-width: 700px;
@@ -54,19 +56,19 @@ a {
 .form-control,
 .form-select {
   border-radius: 0.75rem;
-  border: 2px solid #ffc757;
+  border: 2px solid var(--amarelo);
 }
 .form-control:focus,
 .form-control:active {
   outline: none;
   box-shadow: none;
-  border: 3px solid #ffc757;
+  border: 3px solid var(--amarelo);
 }
 .form-select:focus,
 .form-select:active {
   outline: none;
   box-shadow: none;
-  border: 3px solid #ffc757;
+  border: 3px solid var(--amarelo);
 }
 /* TAMANHO TEXT AREAR */
 #FormControlTextarea {
@@ -76,8 +78,8 @@ a {
 .btn {
   border-radius: 1rem;
   font-size: 18px;
-  background: #ffc757;
-  border: 2px solid #ffc757;
+  background: var(--amarelo);
+  border: 2px solid var(--amarelo);
   color: #fff;
   text-shadow: 1px 1px 3px rgb(93, 93, 93);
 }
@@ -88,9 +90,9 @@ a {
   width: 14rem;
 }
 .btn:hover {
-  color: #ffc757;
-  background: #2e4052;
-  border: 2px solid #ffc757;
+  color: var(--amarelo);
+  background: var(--azulEscuro);
+  border: 2px solid var(--amarelo);
 }
 .btn:focus,
 .btn:active {
@@ -138,7 +140,7 @@ input.invalid {
   display: none;
 }
 .stepDesign {
-  background: #2e4052;
+  background: var(--azulEscuro);
   width: 650px;
   max-width: 700px;
   margin: auto;
@@ -148,7 +150,7 @@ input.invalid {
   height: 45px;
   width: 45px;
   margin: 0 35px;
-  background-color: #ffc757;
+  background-color: var(--amarelo);
   border: none;
   border-radius: 50%;
   display: inline-block;
@@ -158,7 +160,7 @@ input.invalid {
   opacity: 1;
 }
 .step.finish {
-  background-color: #ffc757;
+  background-color: var(--amarelo);
   opacity: 1;
 }
 /* Progress-bar */
@@ -186,10 +188,10 @@ input.invalid {
   right: -70px;
   height: 4px;
   width: 70px;
-  background: #ffc757;
+  background: var(--amarelo);
 }
 .progress-bar .step .bullet.active:after {
-  background: #ffc757;
+  background: var(--amarelo);
   transform: scaleX(0);
   transform-origin: left;
   animation: animate 0.3s linear forwards;
@@ -213,7 +215,7 @@ input.invalid {
 }
 .progress-bar .step .check.active {
   display: block;
-  color: #ffc757;
+  color: var(--amarelo);
 }
 @media (max-width: 700px) {
   /* FORM - TAMANHO*/
@@ -257,7 +259,7 @@ input.invalid {
 
   /* PASSO A PASSO - TAMANHO*/
   .stepDesign {
-    background: #2e4052;
+    background: var(--azulEscuro);
     width: 350px;
     max-width: 400px;
   }

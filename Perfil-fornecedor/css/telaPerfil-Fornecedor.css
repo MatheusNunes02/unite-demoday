@@ -3,7 +3,7 @@
 body {
   font-family: "Roboto", sans-serif;
   box-sizing: border-box;
-  background: #f5f5f5;
+  background: var(--branco);
 }
 a{
   text-decoration: none;
@@ -99,33 +99,28 @@ h4{
 /* Button  */
 .btn {
   border-radius: .7rem;
-  background: #2e4052;
+  background: var(--azulEscuro);
   color: #fff;
   border: 0;
 }
 .btn:hover {
   color: #fff;
-  background: #ffc757;
+  background: var(--amarelo);
 }
 .mdn {
   border-radius: .7rem;
-  background: #ffc757;
+  background: var(--amarelo);
   color: #fff;
   border: 0;
+  width: 12rem;
 }
 .mdn:hover {
   color: #fff;
-  background: #2e4052;
+  background: var(--azulEscuro);
 }
 .fa-circle{
   max-width: 80%;
   color: #ccc;
-}
-.fa-star{
-  width: 5%;
-  color: #FAC917;
-  margin: 0;
-  padding:0;
 }
 
 /* FEEDBACK */

@@ -1,9 +1,11 @@
+@import url(../global/global.css);
+
 body {
-  background: #829399;
+  background: var(--azulClaro);
   font-family: 'Roboto', sans-serif;
 }
 form {
-  background: #2e4052;
+  background: var(--azulEscuro);
   color: #fff;
   max-width: 650px;
   padding: 3rem 3rem 8rem 3rem;
@@ -23,9 +25,9 @@ form {
 .btn {
   border-radius: 15px;
   text-shadow: 1px 1px 3px rgb(93, 93, 93);
-  background: #ffc757;
+  background: var(--amarelo);
   color: #fff;
-  border: 2px solid #ffc757;
+  border: 2px solid var(--amarelo);
   margin: 0 auto;
 }
 .btn:focus,
@@ -36,8 +38,8 @@ form {
 
 .btn:hover{
   background-color: transparent;
-  border: 2px solid #ffc757;
-  color: #ffc757;
+  border: 2px solid var(--amarelo);
+  color: var(--amarelo);
 }
 
 @media (max-width: 700px){

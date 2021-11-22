@@ -1,5 +1,7 @@
+@import url(../global/global.css);
+
 body {
-  background: #2e4052;
+  background: var(--azulEscuro);
   font-family: "Roboto", sans-serif;
   box-sizing: border-box;
 }
@@ -17,7 +19,7 @@ p{
 
 /* FORM */
 form {
-  background: #829399;
+  background: var(--azulClaro);
   color: #fff;
   max-width: 650px;
   margin: auto;
