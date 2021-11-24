@@ -1,0 +1,64 @@
+@import url(../global/global.css);
+
+body{
+    font-family: "Roboto", sans-serif;
+}
+main{
+    background: var(--branco);
+}
+/* Nav - Menu */
+nav{
+    background: var(--azulEscuro); 
+    margin: 0;
+}
+.nav-item a{
+    color: #fff;
+    font-size: 12px;
+}
+.nav-item a:hover{
+    color: var(--azulClaro);
+}
+.texting{
+    color: #fff;
+}
+.active-link> a, 
+.active-link> a:hover {
+    color: var(--azulEscuro); 
+    background-color: var(--amarelo); 
+}
+
+::marker {
+    unicode-bidi: isolate;
+    font-variant-numeric: tabular-nums;
+    text-transform: none;
+    text-indent: 0px !important;
+    text-align: start !important;
+    text-align-last: start !important;
+}
+.spr{
+    color: #fff;
+    margin-top: 5rem;
+    margin-bottom: 1.5rem;
+}
+/* Alterar dados */
+section{
+  max-width: 700px;
+  margin: 0 auto;
+}
+.separar{
+    padding-top: 4rem;
+    padding-bottom: 1.5rem;
+}
+.texto{
+    font-size: 18px;
+
+    margin-bottom:.3rem;
+}
+/* Imagem */
+.img-md {
+    width: 64px;
+    height: 64px;
+}
+.img-circle {
+    border-radius: 50%;
+}
