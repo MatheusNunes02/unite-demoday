@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/logo_amerelo.png" type="image/x-icon">
+    <title>Editar Perfil</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/EditarPerfil-Fornecedor.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+</head>
+
+<body>
+    <!-- Tela de Editar Perfil - Pertence ao Fornecedor -->
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+
+            <div class="sidebar-header text-center mt-5">
+                <h3>Unite</h3>
+            </div>
+
+            <div class="position-sticky navbar-collapse collapse show pt-3" id="navbarNav">
+                <div class="text-center mt-3 texting">
+                    <span>Olá{NOME},
+                        aqui é o seu dashboard</span>
+                </div>
+
+                <!-- Imagem -->
+                <div class="pad-btm text-center mt-3 mb-5">
+                    <img class="img-circle img-md" src="img/fotoPerfil.png" alt="Foto Perfil">
+                </div>
+
+                <!-- PRIMEIRA PARTE SIDEBAR -->
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-3">
+                        <a class="nav-link active" aria-current="page" href="#">
+                            <svg class="me-4" aria-hidden="true" focusable="false" data-prefix="fas"
+                                data-icon="chart-pie" class="svg-inline--fa fa-chart-pie fa-w-17" role="img"
+                                xmlns="http://www.w3.org/2000/svg" width="18" viewBox="0 0 544 512">
+                                <path fill="currentColor"
+                                    d="M527.79 288H290.5l158.03 158.03c6.04 6.04 15.98 6.53 22.19.68 38.7-36.46 65.32-85.61 73.13-140.86 1.34-9.46-6.51-17.85-16.06-17.85zm-15.83-64.8C503.72 103.74 408.26 8.28 288.8.04 279.68-.59 272 7.1 272 16.24V240h223.77c9.14 0 16.82-7.68 16.19-16.8zM224 288V50.71c0-9.55-8.39-17.4-17.84-16.06C86.99 51.49-4.1 155.6.14 280.37 4.5 408.51 114.83 513.59 243.03 511.98c50.4-.63 96.97-16.87 135.26-44.03 7.9-5.6 8.42-17.23 1.57-24.08L224 288z">
+                                </path>
+                            </svg>
+                            <span>Analytics</span>
+                        </a>
+                    </li>
+                    <li class="nav-item mb-3">
+                        <a class="nav-link" href="#">
+                            <svg class="me-4" aria-hidden="true" focusable="false" data-prefix="fas"
+                                data-icon="comment-dots" class="svg-inline--fa fa-comment-dots fa-w-16" role="img"
+                                xmlns="http://www.w3.org/2000/svg" width="18" viewBox="0 0 512 512">
+                                <path fill="currentColor"
+                                    d="M256 32C114.6 32 0 125.1 0 240c0 49.6 21.4 95 57 130.7C44.5 421.1 2.7 466 2.2 466.5c-2.2 2.3-2.8 5.7-1.5 8.7S4.8 480 8 480c66.3 0 116-31.8 140.6-51.4 32.7 12.3 69 19.4 107.4 19.4 141.4 0 256-93.1 256-208S397.4 32 256 32zM128 272c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm128 0c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm128 0c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32z">
+                                </path>
+                            </svg>
+                            <span>Chats</span>
+                        </a>
+                    </li>
+                    <li class="nav-item mb-3 active">
+                        <a class="nav-link" href="#">
+                            <svg class="me-4" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="lock"
+                                class="svg-inline--fa fa-lock fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg"
+                                width="18" viewBox="0 0 448 512">
+                                <path fill="currentColor"
+                                    d="M400 224h-24v-72C376 68.2 307.8 0 224 0S72 68.2 72 152v72H48c-26.5 0-48 21.5-48 48v192c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V272c0-26.5-21.5-48-48-48zm-104 0H152v-72c0-39.7 32.3-72 72-72s72 32.3 72 72v72z">
+                                </path>
+                            </svg>
+                            <span>Editar perfil</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#">
+                            <svg class="me-4" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="cog"
+                                class="svg-inline--fa fa-cog fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
+                                width="18" viewBox="0 0 512 512">
+                                <path fill="currentColor"
+                                    d="M487.4 315.7l-42.6-24.6c4.3-23.2 4.3-47 0-70.2l42.6-24.6c4.9-2.8 7.1-8.6 5.5-14-11.1-35.6-30-67.8-54.7-94.6-3.8-4.1-10-5.1-14.8-2.3L380.8 110c-17.9-15.4-38.5-27.3-60.8-35.1V25.8c0-5.6-3.9-10.5-9.4-11.7-36.7-8.2-74.3-7.8-109.2 0-5.5 1.2-9.4 6.1-9.4 11.7V75c-22.2 7.9-42.8 19.8-60.8 35.1L88.7 85.5c-4.9-2.8-11-1.9-14.8 2.3-24.7 26.7-43.6 58.9-54.7 94.6-1.7 5.4.6 11.2 5.5 14L67.3 221c-4.3 23.2-4.3 47 0 70.2l-42.6 24.6c-4.9 2.8-7.1 8.6-5.5 14 11.1 35.6 30 67.8 54.7 94.6 3.8 4.1 10 5.1 14.8 2.3l42.6-24.6c17.9 15.4 38.5 27.3 60.8 35.1v49.2c0 5.6 3.9 10.5 9.4 11.7 36.7 8.2 74.3 7.8 109.2 0 5.5-1.2 9.4-6.1 9.4-11.7v-49.2c22.2-7.9 42.8-19.8 60.8-35.1l42.6 24.6c4.9 2.8 11 1.9 14.8-2.3 24.7-26.7 43.6-58.9 54.7-94.6 1.5-5.5-.7-11.3-5.6-14.1zM256 336c-44.1 0-80-35.9-80-80s35.9-80 80-80 80 35.9 80 80-35.9 80-80 80z">
+                                </path>
+                            </svg>
+                            <span>Alterar senha</span>
+                        </a>
+                    </li>
+                </ul>
+                <hr class="limite">
+
+                <!-- SEGUNDA PARTE SIDEBAR -->
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-3">
+                        <a class="nav-link" href="#">
+                            <svg class="me-4" aria-hidden="true" focusable="false" data-prefix="fas"
+                                data-icon="question-circle" class="svg-inline--fa fa-question-circle fa-w-16" role="img"
+                                xmlns="http://www.w3.org/2000/svg" width="18" viewBox="0 0 512 512">
+                                <path fill="currentColor"
+                                    d="M504 256c0 136.997-111.043 248-248 248S8 392.997 8 256C8 119.083 119.043 8 256 8s248 111.083 248 248zM262.655 90c-54.497 0-89.255 22.957-116.549 63.758-3.536 5.286-2.353 12.415 2.715 16.258l34.699 26.31c5.205 3.947 12.621 3.008 16.665-2.122 17.864-22.658 30.113-35.797 57.303-35.797 20.429 0 45.698 13.148 45.698 32.958 0 14.976-12.363 22.667-32.534 33.976C247.128 238.528 216 254.941 216 296v4c0 6.627 5.373 12 12 12h56c6.627 0 12-5.373 12-12v-1.333c0-28.462 83.186-29.647 83.186-106.667 0-58.002-60.165-102-116.531-102zM256 338c-25.365 0-46 20.635-46 46 0 25.364 20.635 46 46 46s46-20.636 46-46c0-25.365-20.635-46-46-46z">
+                                </path>
+                            </svg>
+                            <span>Precisa de ajuda?</span>
+                        </a>
+                    </li>
+                    <li class="nav-item mb-3">
+                        <a class="nav-link" href="#">
+                            <svg class="me-4" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search"
+                                class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
+                                width="18" viewBox="0 0 512 512">
+                                <path fill="currentColor"
+                                    d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z">
+                                </path>
+                            </svg>
+                            <span>Voltar a pesquisar</span>
+                        </a>
+                    </li>
+                    <li class="nav-item mb-5">
+                        <a class="nav-link" href="#">
+                            <svg class="me-4" aria-hidden="true" focusable="false" data-prefix="fas"
+                                data-icon="sign-out-alt" class="svg-inline--fa fa-sign-out-alt fa-w-16" role="img"
+                                xmlns="http://www.w3.org/2000/svg" width="18" viewBox="0 0 512 512">
+                                <path fill="currentColor"
+                                    d="M497 273L329 441c-15 15-41 4.5-41-17v-96H152c-13.3 0-24-10.7-24-24v-96c0-13.3 10.7-24 24-24h136V88c0-21.4 25.9-32 41-17l168 168c9.3 9.4 9.3 24.6 0 34zM192 436v-40c0-6.6-5.4-12-12-12H96c-17.7 0-32-14.3-32-32V160c0-17.7 14.3-32 32-32h84c6.6 0 12-5.4 12-12V76c0-6.6-5.4-12-12-12H96c-53 0-96 43-96 96v192c0 53 43 96 96 96h84c6.6 0 12-5.4 12-12z">
+                                </path>
+                            </svg>
+                            <span>Sair da conta</span>
+                        </a>
+                    </li>
+                </ul>
+        </nav>
+
+        <!-- PARTE DO CONTEUDO -->
+        <div id="content">
+            <!-- Botão para abrir e fechar o sidebar -->
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+
+                    </button>
+                    <img src="img/logo_amerelo.png" alt="Logo" width="50">
+
+                </div>
+            </nav>
+
+            <!-- Dados para usuário alterar -->
+
+            <div class="spr">
+                <h2>Editar perfil</h2>
+            </div>
+
+            <section>
+                <div class="picture-container">
+                    <div class="mb-5 picture" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                        title="Adicione uma foto">
+                        <img src="img/fotoPerfil.png" class="picture-src" id="preview" title="">
+                        <input id="img-input" type="file" name="imagem">
+                    </div>
+                </div>
+
+                <!-- Imagens Lado a Lado -->
+                <div class="row mb-4 mt-5">
+                    <div class="col-sm-4 mb-3">
+                        <img class="img-responsive cachoeira" src="img/cachoeira.jpg">
+                    </div>
+                    <div class="col-sm-4 mb-3">
+                        <img class="img-responsive cachoeira" src="img/cachoeira.jpg">
+                    </div>
+                    <div class="col-sm-4 mb-3">
+                        <img class="img-responsive cachoeira" src="img/cachoeira.jpg">
+                    </div>
+                </div>
+                <div class="mt-5">
+                    <div class="mb-3">
+                        <label for="nomecompleto" class="texto">Nome completo</label>
+                        <input type="text" id="nomecompleto" class="form-control" aria-label="Nome completo">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="texto">E-mail</label>
+                        <input type="email" id="email" class="form-control" id="email">
+                    </div>
+                    <div class="mb-3">
+                        <label for="numerotelefone" class="texto">Número telefone</label>
+                        <input type="tel" id="numerotelefone" class="form-control" id="numero">
+                    </div>
+                    <div class="mb-3">
+                        <label for="cpf" class="texto">CPF</label>
+                        <input type="number" id="cpf" class="form-control" id="cpf">
+                    </div>
+                    <div class="mb-3">
+                        <label for="nomedaempresa" class="texto">Nome da Empresa</label>
+                        <input type="text" class="form-control" id="nomedaempresa">
+                    </div>
+                    <div class="mb-3">
+                        <label for="cnpj" class="texto">CNPJ</label>
+                        <input type="number" class="form-control" id="cnpj">
+                    </div>
+                    <div class="mb-3">
+                        <label for="cep" class="texto">CEP</label>
+                        <input type="number" id="cep" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <label for="endereco" class="texto">Endereço</label>
+                        <input type="text" id="endereco" class="form-control">
+                    </div>
+                    <div class="mb-4">
+                        <label for="categoria" class="texto">Selecione categoria</label>
+                        <select class="form-select" id="categoria">
+                            <option selected>Categoria</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+                    <div class="mb-5">
+                        <label for="FormControlTextarea" class="texto">Sobre</label>
+                        <textarea class="form-control" id="FormControlTextarea" rows="3"></textarea>
+                    </div>
+                    <div class="mb-5 text-end mt-5 separar">
+                        <button class="btn tmn-2" type="submit">Salvar</button>
+                    </div>
+                </div>
+            </section>
+
+
+
+        </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <script src="js/sidebar.js"></script>
+    <script src="js/imagem.js"></script>
+
+</body>
+
+</html>
