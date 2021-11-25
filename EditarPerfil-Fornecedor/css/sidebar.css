@@ -16,6 +16,16 @@ a, a:hover, a:focus {
     background: var(--azulEscuro);
     color: #fff;
     transition: all 0.3s;
+    position: fixed;
+    height: 100%;
+    z-index: 998;
+
+}
+
+.container-fluid{
+    position: fixed;
+    right: 2px ;
+    z-index: 999;
 }
 #sidebar a {
     color: #fff;
