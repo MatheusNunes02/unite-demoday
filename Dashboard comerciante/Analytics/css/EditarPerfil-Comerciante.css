@@ -27,7 +27,6 @@ section{
     text-align: center;
     color: var(--branco);
     background-color: var(--amarelo);
-    margin: 50px;
     margin-top: 0;
     border-radius: 15px;
     padding-bottom: 30px;
@@ -52,14 +51,14 @@ h5{
 #gr_area{
     background-color: var(--branco);
     min-width: none;
-    width: 1000px;
+    width: 800px;
     height: 500px;
 }
 
 
 /* Área azul vazia que eu não faço ideia do que serve, tô só seguindo o figma */
 #p-blue{
-    width: 1000px;
+    width: 800px;
     min-width: none;
 }
 
