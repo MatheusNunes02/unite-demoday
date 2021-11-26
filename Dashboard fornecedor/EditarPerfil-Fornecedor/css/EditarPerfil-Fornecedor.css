@@ -13,7 +13,7 @@ body {
   background: var(--branco);
 }
 .spr {
-  margin: 5rem 0 5rem 0rem;
+  margin: 5rem 0 3rem 0rem;
 }
 /* Alterar dados */
 section {
@@ -36,9 +36,4 @@ section {
 }
 .img-circle {
   border-radius: 50%;
-}
-
-.cachoeira {
-  width: 100%;
-  cursor: pointer;
 }

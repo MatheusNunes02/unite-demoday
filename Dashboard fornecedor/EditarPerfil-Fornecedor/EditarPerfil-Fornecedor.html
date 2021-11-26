@@ -148,34 +148,55 @@
                 </div>
             </nav>
 
+
             <!-- Dados para usuário alterar -->
-
-            
-
             <section>
                 <div class="spr">
                     <h2>Editar perfil</h2>
                 </div>
+                
                 <div class="picture-container">
                     <div class="mb-5 picture" data-bs-toggle="tooltip" data-bs-placement="bottom"
-                        title="Adicione uma foto">
+                        title="Adicione outra foto">
                         <img src="img/fotoPerfil.png" class="picture-src" id="preview" title="">
                         <input id="img-input" type="file" name="imagem">
                     </div>
                 </div>
 
                 <!-- Imagens Lado a Lado -->
-                <div class="row mb-4 mt-5">
-                    <div class="col-sm-4 mb-3">
-                        <img class="img-responsive cachoeira" src="img/cachoeira.jpg">
+                <div class="row mt-5">
+                    <!-- Imagem Um -->
+                    <div class="col-sm-4">
+                        <div class="imagem-container">
+                            <div class="imagem mb-3" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                title="Adicione outra foto">
+                                <img src="img/cachoeira.jpg" class="imagem-src" id="ver" title="">
+                                <input id="imagem-input" type="file" name="imagem">
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-sm-4 mb-3">
-                        <img class="img-responsive cachoeira" src="img/cachoeira.jpg">
+                    <div class="col-sm-4">
+                        <!-- Imagem Dois -->
+                        <div class="imagem-container">
+                            <div class="imagem mb-3" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                title="Adicione outra foto">
+                                <img src="img/cachoeira.jpg" class="imagem-src" id="verDois" title="">
+                                <input id="imagemDois-input" type="file" name="imagem">
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-sm-4 mb-3">
-                        <img class="img-responsive cachoeira" src="img/cachoeira.jpg">
+                    <div class="col-sm-4">
+                        <!-- Imagem Tres -->
+                        <div class="imagem-container">
+                            <div class="imagem" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                title="Adicione outra foto">
+                                <img src="img/cachoeira.jpg" class="imagem-src" id="verTres" title="">
+                                <input id="imagemTres-input" type="file" name="imagem">
+                            </div>
+                        </div>
                     </div>
-                </div>
+                </div> 
+                
                 <div class="mt-5">
                     <div class="mb-3">
                         <label for="nomecompleto" class="texto">Nome completo</label>
@@ -227,11 +248,7 @@
                     </div>
                 </div>
             </section>
-
-
-
         </div>
-
     </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
