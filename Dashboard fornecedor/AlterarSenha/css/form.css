@@ -23,12 +23,12 @@
   line-height: 2.4;
 }
 
-/* Button   */
+ /* Button   */
 .btn {
   border-radius: 1rem;
   font-size: 18px;
-  background: var(--amarelo);
-  border: 2px solid var(--amarelo);
+  background: #ffc757;
+  border: 2px solid #ffc757;
   color: #fff;
   text-shadow: 1px 1px 3px rgb(93, 93, 93);
 }
@@ -36,9 +36,9 @@
   width: 14rem;
 }
 .btn:hover {
-  color: var(--amarelo);
-  background: var(--azulEscuro);
-  border: 2px solid var(--amarelo);
+  color: #ffc757;
+  background: #2e4052;
+  border: 2px solid #ffc757;
 }
 .btn:focus,
 .btn:active {
@@ -48,32 +48,32 @@
 
 /* PICTURE */
 .picture-container {
-  position: relative;
-  cursor: pointer;
-  text-align: center;
-}
-.picture {
-  width: 136px;
-  height: 136px;
-  background-color: #d8d1c9;
-  border: 0px solid transparent;
-  color: #ffffff;
-  border-radius: 50%;
-  margin: 5px auto;
-  overflow: hidden;
-  transition: all 0.2s;
-  -webkit-transition: all 0.2s;
-}
-.picture-src {
-  width: 100%;
-}
-.picture input[type="file"] {
-  cursor: pointer;
-  display: block;
-  height: 100%;
-  left: 0;
-  opacity: 0 !important;
-  position: absolute;
-  top: 0;
-  width: 100%;
-}
+    position: relative;
+    cursor: pointer;
+    text-align: center;
+  }
+  .picture {
+    width: 136px;
+    height: 136px;
+    background-color: #d8d1c9;
+    border: 0px solid transparent;
+    color: #ffffff;
+    border-radius: 50%;
+    margin: 5px auto;
+    overflow: hidden;
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+  }
+  .picture-src {
+    width: 100%;
+  }
+  .picture input[type="file"] {
+    cursor: pointer;
+    display: block;
+    height: 100%;
+    left: 0;
+    opacity: 0 !important;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
