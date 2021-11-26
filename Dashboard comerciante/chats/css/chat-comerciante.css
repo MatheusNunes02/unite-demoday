@@ -40,3 +40,11 @@ section{
 .img-circle {
     border-radius: 50%;
 }
+
+
+.cardChat{
+    width: 100%;
+    max-height: auto;
+    min-height: 160px ;
+    background-color: white;
+}
