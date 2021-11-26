@@ -16,16 +16,6 @@ a, a:hover, a:focus {
     background: var(--azulEscuro);
     color: #fff;
     transition: all 0.3s;
-    position: fixed;
-    height: 100%;
-    z-index: 998;
-
-}
-
-.container-fluid{
-    position: fixed;
-    right: 2px ;
-    z-index: 999;
 }
 #sidebar a {
     color: #fff;
@@ -75,6 +65,14 @@ a[data-toggle="collapse"] {
     width: 40px;
     height: 40px;
     background: var(--branco);
+    z-index: 1000;
+}
+
+.container-fluid{
+    position: fixed;
+    z-index: 1000;
+    left: 3px;
+    top: 10px;
 }
 
 #sidebarCollapse span {
@@ -135,8 +133,12 @@ a[data-toggle="collapse"] {
     #sidebarCollapse.active span:last-of-type {
         transform: rotate(-45deg) translate(1px, -1px);
     }
-    .spr {
-        margin: 5rem 0 5rem 0rem;
-    }
 }
 
+
+@media (max-width:720px){
+    #sidebar{
+        position: fixed;
+        z-index: 999;
+    }
+}

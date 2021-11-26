@@ -23,7 +23,7 @@
   line-height: 2.4;
 }
 
-/* Button   */
+ /* Button   */
 .btn {
   border-radius: 1rem;
   font-size: 18px;
@@ -47,44 +47,33 @@
 }
 
 /* PICTURE */
-.picture-container,
-.imagens {
-  position: relative;
-  cursor: pointer;
-  text-align: center;
-}
-.picture {
-  width: 136px;
-  height: 136px;
-  background-color: #d8d1c9;
-  border: 0px solid transparent;
-  color: #ffffff;
-  border-radius: 50%;
-  margin: 5px auto;
-  overflow: hidden;
-  transition: all 0.2s;
-  -webkit-transition: all 0.2s;
-}
-.tresImg{
-  background-color: #d8d1c9;
-  border: 0px solid transparent;
-  color: #ffffff;
-  overflow: hidden;
-  transition: all 0.2s;
-  -webkit-transition: all 0.2s;
-}
-.picture-src,
-.imagens {
-  width: 100%;
-}
-.picture input[type="file"],
-.imagens input[type="file"] {
-  cursor: pointer;
-  display: block;
-  height: 100%;
-  left: 0;
-  opacity: 0 !important;
-  position: absolute;
-  top: 0;
-  width: 100%;
-}
+.picture-container {
+    position: relative;
+    cursor: pointer;
+    text-align: center;
+  }
+  .picture {
+    width: 136px;
+    height: 136px;
+    background-color: #d8d1c9;
+    border: 0px solid transparent;
+    color: #ffffff;
+    border-radius: 50%;
+    margin: 5px auto;
+    overflow: hidden;
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+  }
+  .picture-src {
+    width: 100%;
+  }
+  .picture input[type="file"] {
+    cursor: pointer;
+    display: block;
+    height: 100%;
+    left: 0;
+    opacity: 0 !important;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
