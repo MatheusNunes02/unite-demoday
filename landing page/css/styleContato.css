@@ -31,7 +31,7 @@ body{
 
 #bt{
     margin: 30;
-    margin-left: 30px;
+    margin-left: auto;
 }
 
 #bt > input{
@@ -47,8 +47,6 @@ body{
     width: 90px;
     color: var(--branco);
     background-color: var(--amarelo);
-    margin-left: 46vw;
-    margin-top: 30px;
 }
 
 #bt > input:nth-child(4):hover{
@@ -59,12 +57,12 @@ body{
 
 #bt > input:nth-child(1){
     margin-right: 400px;
-    width: 250px;
+    width: 300px;
 }
 
 #bt > input:nth-child(2){
     margin-right: 400px;
-    width: 250px;
+    width: 300px;
 }
 
 
@@ -74,6 +72,7 @@ body{
     height: 200px;
     width: 53vw;
     border-radius: 10px;
+    margin-right: 50px;
 }
 
 
