@@ -15,7 +15,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="css/login.css">
     <link rel="stylesheet" href="css/buttonAndForm.css">
-
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </head>
 
 <body>
@@ -44,11 +44,11 @@
         <form class="rounded-3 aln-1">
 
             <div class="mb-3">
-                <input class="m-auto" type="image" src="img/undraw_secure_login_pdn4.svg" width="300">
+                <input class="m-auto" id='icon-img' type="image" src="img/undraw_secure_login_pdn4.svg" width="300">
             </div>
 
             <div class="mb-3 mt-5">
-                <input type="email" class="form-control" placeholder="Email" aria-label="E-mail">
+                <input type="email" id='email' name='email' class="form-control" placeholder="Email" aria-label="E-mail">
             </div>
             <div class="containerEsqueciSenha">
             <a href="esqueciSenha.html">
@@ -57,12 +57,12 @@
             </div>
 
             <div class="mb-3">
-                <input type="password" class="form-control" id="senha" placeholder="Senha">
+                <input type="password" id='password' name='password' class="form-control" id="senha" placeholder="Senha">
             </div>
 
             <div class="mx-auto mb-4">
                 <a href="#">
-                    <button class="btn tmn-1 ps-5 pe-5" type="submit">Entrar</button>
+                    <button class="btn tmn-1 ps-5 pe-5" type="button" onclick="Login()" >Entrar</button>
                 </a>
             </div>
 
@@ -70,7 +70,7 @@
             <p>Não possui conta? <a href="../Cadastro/cadastro.html"><span class="fontAmarela">Cadastre-se aqui!</span></a></p>
         </form>
     </section>
-
+    <script src='js/RealizarLogin.js'></script>
 </body>
 
 </html>

@@ -6,40 +6,41 @@ body {
   box-sizing: border-box;
   text-align: center;
 }
-a{
+a {
   text-decoration: none;
 }
 
-h1{
+h1 {
   color: white;
 }
 
-p{
+p {
   font-size: 14px;
   color: white;
 }
 
-.fontAmarela, .fontPequena{
+.fontAmarela,
+.fontPequena {
   color: var(--amarelo);
   cursor: pointer;
 }
 
-.fontAmarela:hover, .fontPequena:hover{
+.fontAmarela:hover,
+.fontPequena:hover {
   color: var(--azulEscuro);
 }
 
-.containerEsqueciSenha{
+.containerEsqueciSenha {
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
 
-.fontPequena{
+.fontPequena {
   margin: 0;
   font-size: 13px;
   text-align: right;
 }
-
 
 /* FORM */
 form {
@@ -51,4 +52,17 @@ form {
 }
 .rounded-3 {
   border-radius: 1rem !important;
+}
+
+#icon-img {
+  width: 300px;
+}
+
+@media screen and (max-width: 512px) {
+  #icon-img {
+    width: 100%;
+  }
+  form {
+    width: 100%;
+  }
 }
