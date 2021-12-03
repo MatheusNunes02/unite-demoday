@@ -15,6 +15,9 @@ body {
 .spr {
   margin: 5rem 0 3rem 0rem;
 }
+.limite{
+  margin:5rem 0 3rem 0rem;
+}
 /* Alterar dados */
 section {
   max-width: 700px;
