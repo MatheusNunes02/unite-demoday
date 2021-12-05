@@ -6,18 +6,20 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="img/logo_amerelo.png" type="image/x-icon">
-  <title>Editar Perfil</title>
+  <title>Chat</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="css/EditarPerfil-Comerciante.css">
+  <link rel="stylesheet" href="css/chat-comerciante.css">
   <link rel="stylesheet" href="css/form.css">
   <link rel="stylesheet" href="css/sidebar.css">
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src='../../js/token.js'></script>
 </head>
 
 <body>  
-   <!-- Tela analytics -->
+   <!-- Tela de Editar Perfil - Pertence ao Comerciante -->
   <div class="wrapper">
     <!-- Sidebar  -->
     <nav id="sidebar">
@@ -39,7 +41,7 @@
 
             <!-- PRIMEIRA PARTE SIDEBAR -->
             <ul class="nav flex-column">
-                <li class="nav-item mb-3 active">
+                <li class="nav-item mb-3">
                     <a class="nav-link active" aria-current="page" href="#">
                         <svg class="me-4" aria-hidden="true" focusable="false" data-prefix="fas"
                             data-icon="chart-pie" class="svg-inline--fa fa-chart-pie fa-w-17" role="img"
@@ -51,8 +53,8 @@
                         <span>Analytics</span>
                     </a>
                 </li>
-                <li class="nav-item mb-3">
-                    <a class="nav-link" href="#">
+                <li class="nav-item mb-3 active">
+                    <a class="nav-link" href="../chats/chat-Comerciante.html">
                         <svg class="me-4" aria-hidden="true" focusable="false" data-prefix="fas"
                             data-icon="comment-dots" class="svg-inline--fa fa-comment-dots fa-w-16" role="img"
                             xmlns="http://www.w3.org/2000/svg" width="18" viewBox="0 0 512 512">
@@ -63,8 +65,8 @@
                         <span>Chats</span>
                     </a>
                 </li>
-                <li class="nav-item mb-3">
-                    <a class="nav-link" href="#">
+                <li class="nav-item mb-3 ">
+                    <a class="nav-link" href="../EditarPerfil-Fornecedor/EditarPerfil-Fornecedor.html">
                         <svg class="me-4" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="lock"
                             class="svg-inline--fa fa-lock fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg"
                             width="18" viewBox="0 0 448 512">
@@ -76,7 +78,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link " href="#">
+                    <a class="nav-link " href="../AlterarSenha/alterarSenha.html">
                         <svg class="me-4" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="cog"
                             class="svg-inline--fa fa-cog fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
                             width="18" viewBox="0 0 512 512">
@@ -105,7 +107,7 @@
                     </a>
                 </li>
                 <li class="nav-item mb-3">
-                    <a class="nav-link" href="#">
+                    <a class="nav-link" href="../../Tela_pesquisar_comerciante/telaPesquisa_Comerciante.html">
                         <svg class="me-4" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search"
                             class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
                             width="18" viewBox="0 0 512 512">
@@ -148,46 +150,37 @@
             </div>
         </nav>
 
-         <!-- Analytics -->
+         <!-- Container card chats -->
+      
          
+      
+
+
         <section>
           <div class="spr">
-            <h2>Analytics</h2>
+            <h2>Chats</h2>
            </div>
-           <div class="row mb-4">
-            <div class="col-sm-4 mb-3">
-                <div id="dados" class="p-2">
-                    <h5 id="num">Visitas no perfil</h5>
-                      <h1>99</h1>
-                </div>
+          <div class="container-CardChat">
+            <div class="cardChat">
+              <img src="img/fotoPerfil.png">
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum voluptatum impedit nam rem similique vitae assumenda repudiandae tempora autem, cum culpa tenetur fuga ea nemo sint officiis sapiente, porro eaque.</p>
             </div>
-            <div class="col-sm-4 mb-3">
-                <div id="dados" class="p-2">
-                    <h5 id="num">Chats</h5>
-                    <h1>72</h1>
-                </div>
+
+            <div class="cardChat">
+              <img src="img/fotoPerfil.png">
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum voluptatum impedit nam rem similique vitae assumenda repudiandae tempora autem, cum culpa tenetur fuga ea nemo sint officiis sapiente, porro eaque.</p>
             </div>
-            <div class="col-sm-4 mb-3">
-                <div id="dados" class="p-2">
-                    <h5 id="num">Avaliação</h5>
-                    <h1>4.5</h1>
-                </div>
+
+            <div class="cardChat">
+              <img src="img/fotoPerfil.png">
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum voluptatum impedit nam rem similique vitae assumenda repudiandae tempora autem, cum culpa tenetur fuga ea nemo sint officiis sapiente, porro eaque.</p>
+            </div>
+
+            <div class="cardChat">
+              <img src="img/fotoPerfil.png">
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum voluptatum impedit nam rem similique vitae assumenda repudiandae tempora autem, cum culpa tenetur fuga ea nemo sint officiis sapiente, porro eaque.</p>
             </div>
         </div>
-
-
-          <div id="gr_area" class="container">
-              <div class="row">
-                <div id="curve_chart" style="width: 900px; height: 500px" class="col">
-                </div>
-              </div>
-          </div>
-          <div id="p-blue" class="container">
-            <div class="row">
-                <div id="blue_a" class="col">
-                </div>
-            </div>
-          </div>
         </section>
 
     </div>
@@ -204,31 +197,6 @@
 
 <script src="js/sidebar.js"></script>
 <script src="js/imagem.js"></script>
-<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <script type="text/javascript">
-      google.charts.load('current', {'packages':['corechart']});
-      google.charts.setOnLoadCallback(drawChart);
-
-      function drawChart() {
-        var data = google.visualization.arrayToDataTable([
-          ['Year', 'Sales', 'Expenses'],
-          ['2019',  400,         400],
-          ['2020',  600,         460],
-          ['2021',  1020,       1120],
-          ['2022',  930,         540]
-        ]);
-
-        var options = {
-          title: '',
-          curveType: 'function',
-          legend: { position: 'bottom' }
-        };
-
-        var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
-
-        chart.draw(data, options);
-      }
-    </script>
 </body>
 
 </html>
