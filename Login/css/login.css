@@ -1,0 +1,54 @@
+@import url(../global/global.css);
+
+body {
+  background: var(--azulEscuro);
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+  text-align: center;
+}
+a{
+  text-decoration: none;
+}
+
+h1{
+  color: white;
+}
+
+p{
+  font-size: 14px;
+  color: white;
+}
+
+.fontAmarela, .fontPequena{
+  color: var(--amarelo);
+  cursor: pointer;
+}
+
+.fontAmarela:hover, .fontPequena:hover{
+  color: var(--azulEscuro);
+}
+
+.containerEsqueciSenha{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.fontPequena{
+  margin: 0;
+  font-size: 13px;
+  text-align: right;
+}
+
+
+/* FORM */
+form {
+  background: var(--azulClaro);
+  color: #fff;
+  max-width: 650px;
+  height: 600px;
+  margin: auto;
+}
+.rounded-3 {
+  border-radius: 1rem !important;
+}

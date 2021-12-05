@@ -1,0 +1,30 @@
+@import url(../global/global.css);
+
+body {
+  background: var(--azulEscuro);
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+a{
+  text-decoration: none;
+}
+
+h1{
+  color: white;
+}
+
+p{
+  font-weight: bold;
+}
+
+/* FORM */
+form {
+  background: var(--azulClaro);
+  color: #fff;
+  max-width: 650px;
+  margin: auto;
+  height: 600px;
+}
+.rounded-3 {
+  border-radius: 1rem !important;
+}
