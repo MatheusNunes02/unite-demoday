@@ -1,0 +1,143 @@
+@import url(../global/global.css);
+
+body {
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+  background: var(--branco);
+}
+a{
+  text-decoration: none;
+}
+header{
+  width: 100%;
+  max-height: 100%;
+  background-color: var(--azulEscuro);
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+body{
+  background-color: var(--branco);
+}
+
+
+.containerHeaderall{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 15px;
+}
+
+.containerHeaderall img{
+  width: 72px;
+}
+
+.containerBotaofiltro{
+  padding: 10px 0px 10px 0px ;
+}
+
+.btn{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: transparent;
+  border: 0px;
+  width: 120px;
+  gap: 20px;
+}
+
+.btn img{
+  width: 30px;
+}
+
+.btn:focus{
+  box-shadow: none;
+}
+
+.botaoInputpesquisar{
+  width: 60px;
+}
+
+
+.inputPesquisar{
+  width: 550px;
+  height: 45px;
+}
+
+.form-control{
+  box-sizing: border-box;
+  border: 3px solid var(--amarelo);
+  border-radius: 15px 0px 0px 15px;
+}
+
+.botaoInputpesquisar{
+  height: 50px;
+  border-radius: 0px 15px 15px 0px;
+  background-color: var(--amarelo);
+  border: 0px;
+}
+
+.botaoInputpesquisar img{
+  width: 23px;
+ 
+}
+
+/* Conteudo */
+.container-sm {
+  max-width: 960px;
+}
+h2{
+  font-size: 28px;
+}
+h4{
+  font-size: 15px;
+  color: rgb(107, 104, 104);
+}
+/* Button  */
+.btn {
+  border-radius: .7rem;
+  background: var(--azulEscuro);
+  color: #fff;
+  border: 0;
+}
+.btn:hover {
+  color: #fff;
+  background: var(--amarelo);
+}
+.mdn {
+  border-radius: .7rem;
+  background: var(--amarelo);
+  color: #fff;
+  border: 0;
+  width: 12rem;
+}
+.mdn:hover {
+  color: #fff;
+  background: var(--azulEscuro);
+}
+.fa-circle{
+  max-width: 80%;
+  color: #ccc;
+}
+
+/* Imagens Lado a Lado */
+.cachoeira{
+  width: 100%;
+}
+
+/* FEEDBACK */
+h1{
+  color: #000;
+}
+.card-text{
+  font-size: 12px;
+}
+.like,
+.deslike{
+  width:5%;
+}
+.card{
+  border-radius: 1rem;
+}
