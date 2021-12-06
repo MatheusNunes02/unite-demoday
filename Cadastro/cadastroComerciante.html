@@ -1,115 +1,234 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="img/logo_amerelo.png" type="image/x-icon">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/logo_amerelo.png" type="image/x-icon" />
     <title>Comerciante</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="css/cadComercianteEFornecedor.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/cadComercianteEFornecedor.css" />
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-</head>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </head>
 
-<body>
+  <body>
     <header class="container">
-        <div class=" d-flex align-items-center justify-content-between py-3 ">
-            <a href="cadastro.html" class='d-flex' data-bs-toggle="tooltip" data-bs-placement="bottom" title="Voltar para opções de cadastro">
-                <svg aria-hidden="true" width="20" color="#ffffff" focusable="false" data-prefix="fas"
-                    data-icon="chevron-left" class="svg-inline--fa fa-chevron-left fa-w-10" role="img"
-                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
-                    <path fill="currentColor"
-                        d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z">
-                    </path>
-                </svg>
-            </a>
+      <div class="d-flex align-items-center justify-content-between py-3">
+        <a
+          href="cadastro.html"
+          class="d-flex"
+          data-bs-toggle="tooltip"
+          data-bs-placement="bottom"
+          title="Voltar para opções de cadastro"
+        >
+          <svg
+            aria-hidden="true"
+            width="20"
+            color="#ffffff"
+            focusable="false"
+            data-prefix="fas"
+            data-icon="chevron-left"
+            class="svg-inline--fa fa-chevron-left fa-w-10"
+            role="img"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 320 512"
+          >
+            <path
+              fill="currentColor"
+              d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"
+            ></path>
+          </svg>
+        </a>
 
-            <div class="col-md-3 text-end">
-                <img class="img-fluid" width="70" src="img/logo_amerelo.png">
-            </div>
+        <div class="col-md-3 text-end">
+          <img class="img-fluid" width="70" src="img/logo_amerelo.png" />
         </div>
+      </div>
     </header>
 
-    <form action="/Login/login.html">
-        <div class="progress-bar stepDesign pt-5" style="text-align:center;margin-top:20px;">
-            <div class="step">
-                <div class="bullet">
-
-                </div>
-            </div>
-            <div class="step">
-                <div class="bullet">
-
-                </div>
-            </div>
-            <div class="step">
-                <div class="bullet">
-
-                </div>
-            </div>
+    <form action="/Login/login.html" enctype="multipart/form-data">
+      <div
+        class="progress-bar stepDesign pt-5"
+        style="text-align: center; margin-top: 20px"
+      >
+        <div class="step">
+          <div class="bullet"></div>
         </div>
+        <div class="step">
+          <div class="bullet"></div>
+        </div>
+        <div class="step">
+          <div class="bullet"></div>
+        </div>
+      </div>
 
-        <section class="tab-pane text-center">
-            <div class="tab form rounded-3 aln">
-                <div class="mb-3">
-                    <input type="text" class="form-control" placeholder="Nome completo" aria-label="Nome completo">
-                </div>
-                <div class="mb-3">
-                    <input type="email" class="form-control" id="email" placeholder="E-mail">
-                </div>
-                <div class="mb-3">
-                    <input type="tel" class="form-control" id="numero" placeholder="Número telefone">
-                </div>
-                <div class="mb-5">
-                    <input type="number" class="form-control" id="cpf" placeholder="CPF">
-                </div>
-                <div class="separar">
-                    <button class="btn tmn-1" type="button" id="nextBtn" onclick="nextPrev(1)">Avançar</button>
-                </div>
-            </div>
-        </section>
+      <section class="tab-pane text-center">
+        <div class="tab form rounded-3 aln">
+          <div class="mb-3">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Nome completo"
+              aria-label="Nome completo"
+              id="name"
+            />
+          </div>
 
-        <section class="tab-pane text-center">
-            <div class="tab form rounded-3 aln-1">
-                <div class="mb-4">
-                    <input type="number" class="form-control" placeholder="CEP" aria-label="CEP">
-                </div>
-                <div class="mb-4">
-                    <input type="text" class="form-control" placeholder="Endereço" aria-label="Endereço">
-                </div>
-                <div class="separar2">
-                    <button type="button" class="btn tmn-2 me-3 mt-5" id="prevBtn" onclick="nextPrev(-1)">Voltar</button>
-                    <button class="btn tmn-2 mt-5" type="button" id="nextBtn" onclick="nextPrev(1)">Avançar</button>
-                </div>
+          <div class="mb-3">
+            <input
+              type="tel"
+              class="form-control"
+              id="telefone"
+              placeholder="Número telefone"
+            />
+          </div>
+          <div class="mb-5">
+            <input
+              type="text"
+              class="form-control"
+              id="cpf"
+              placeholder="CPF"
+            />
+          </div>
+
+          <div class="mb-3">
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              placeholder="E-mail"
+            />
+          </div>
+          <div class="mb-3">
+            <input
+              type="email"
+              class="form-control"
+              id="password"
+              placeholder="Senha"
+            />
+          </div>
+
+          <div class="separar">
+            <button
+              class="btn tmn-1"
+              type="button"
+              id="nextBtn"
+              onclick="nextPrev(1)"
+            >
+              Avançar
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="tab-pane text-center">
+        <div class="tab form rounded-3 aln-1">
+          <div class="mb-4">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="CEP"
+              aria-label="CEP"
+              id="cep"
+            />
+          </div>
+          <div class="mb-4">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Bairro"
+              aria-label="Bairro"
+              id="bairro"
+            />
+          </div>
+          <div class="mb-4">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Endereço"
+              aria-label="Endereço"
+              id="endereco"
+            />
+          </div>
+          <div class="separar2">
+            <button
+              type="button"
+              class="btn tmn-2 me-3 mt-5"
+              id="prevBtn"
+              onclick="nextPrev(-1)"
+            >
+              Voltar
+            </button>
+            <button
+              class="btn tmn-2 mt-5"
+              type="button"
+              id="nextBtn"
+              onclick="nextPrev(1)"
+            >
+              Avançar
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="tab-pane text-center">
+        <div class="tab form rounded-3 aln-3">
+          <div class="picture-container">
+            <div
+              class="mb-5 picture"
+              data-bs-toggle="tooltip"
+              data-bs-placement="bottom"
+              title="Adicione uma foto"
+            >
+              <img
+                src="img/fotoPerfil.png"
+                class="picture-src"
+                id="preview"
+                title=""
+              />
+              <input id="img-input" type="file" name="imagem" />
             </div>
-        </section>
-        
-        <section class="tab-pane text-center">
-            <div class="tab form rounded-3 aln-3">
-                <div class="picture-container">
-                    <div class="mb-5 picture" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Adicione uma foto">
-                        <img src="img/fotoPerfil.png" class="picture-src" id="preview" title="">
-                        <input id="img-input" type="file" name="imagem">   
-                    </div>
-                </div>
-                <div class="mb-4">
-                    <textarea class="form-control text-center" id="FormControlTextarea" rows="3"
-                        placeholder="Sobre"></textarea>
-                </div>
-                <div class="separar">
-                    <button type="button" class="btn tmn-2 me-3" id="prevBtn"
-                        onclick="nextPrev(-1)">Voltar</button>
-                    <button class="btn tmn-2" type="submit">Finalizar</button>
-                </div>
-            </div>
-        </section>
+          </div>
+          <div class="mb-4">
+            <textarea
+              class="form-control text-center"
+              id="FormControlTextarea"
+              rows="3"
+              placeholder="Sobre"
+            ></textarea>
+          </div>
+          <div class="separar">
+            <button
+              type="button"
+              class="btn tmn-2 me-3"
+              id="prevBtn"
+              onclick="nextPrev(-1)"
+            >
+              Voltar
+            </button>
+            <button
+              class="btn tmn-2"
+              onclick="cadastrarComerciante()"
+              type="submit"
+            >
+              Finalizar
+            </button>
+          </div>
+        </div>
+      </section>
     </form>
 
     <script src="js/cadastro.js"></script>
-</body>
-
+    <script src="js/cadastrarComerciante.js"></script>
+  </body>
 </html>
