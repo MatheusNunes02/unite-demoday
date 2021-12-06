@@ -56,7 +56,7 @@
       </div>
     </header>
 
-    <form action="/Login/login.html" enctype="multipart/form-data">
+    <form enctype="multipart/form-data">
       <div
         class="progress-bar stepDesign pt-5"
         style="text-align: center; margin-top: 20px"
@@ -81,6 +81,8 @@
               placeholder="Nome completo"
               aria-label="Nome completo"
               id="name"
+              name="name"
+              required
             />
           </div>
 
@@ -90,6 +92,8 @@
               class="form-control"
               id="telefone"
               placeholder="Número telefone"
+              name="telefone"
+              required
             />
           </div>
           <div class="mb-5">
@@ -98,6 +102,8 @@
               class="form-control"
               id="cpf"
               placeholder="CPF"
+              name="cpf"
+              required
             />
           </div>
 
@@ -107,14 +113,18 @@
               class="form-control"
               id="email"
               placeholder="E-mail"
+              name="email"
+              required
             />
           </div>
           <div class="mb-3">
             <input
-              type="email"
+              type="text"
               class="form-control"
               id="password"
               placeholder="Senha"
+              name="password"
+              required
             />
           </div>
 
@@ -140,6 +150,7 @@
               placeholder="CEP"
               aria-label="CEP"
               id="cep"
+              required
             />
           </div>
           <div class="mb-4">
@@ -149,6 +160,7 @@
               placeholder="Bairro"
               aria-label="Bairro"
               id="bairro"
+              required
             />
           </div>
           <div class="mb-4">
@@ -158,6 +170,7 @@
               placeholder="Endereço"
               aria-label="Endereço"
               id="endereco"
+              required
             />
           </div>
           <div class="separar2">
@@ -190,12 +203,7 @@
               data-bs-placement="bottom"
               title="Adicione uma foto"
             >
-              <img
-                src="img/fotoPerfil.png"
-                class="picture-src"
-                id="preview"
-                title=""
-              />
+              <img src="img/fotoPerfil.png" class="picture-src" id="preview" />
               <input id="img-input" type="file" name="imagem" />
             </div>
           </div>
@@ -205,6 +213,7 @@
               id="FormControlTextarea"
               rows="3"
               placeholder="Sobre"
+              required
             ></textarea>
           </div>
           <div class="separar">
@@ -219,7 +228,7 @@
             <button
               class="btn tmn-2"
               onclick="cadastrarComerciante()"
-              type="submit"
+              type="button"
             >
               Finalizar
             </button>
