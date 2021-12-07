@@ -138,7 +138,6 @@ function validateForm() {
         .querySelector("#FormControlTextarea")
         .setAttribute("placeholder", "Insira alguma informação");
       document.querySelector("#FormControlTextarea").classList.add("invalid");
-      document.querySelector("#FormControlTextarea").value = "";
       valid = false;
     }
   }

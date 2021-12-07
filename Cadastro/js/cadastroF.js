@@ -50,8 +50,89 @@ function validateForm() {
   }
 
   if (currentTab == 0) {
+    let name = document.querySelector("#nome_empresa");
+    let cnpj = document.querySelector("#cnpj");
+    let telefone = document.querySelector("#telefone");
+
+    if (!name.value) {
+      name.setAttribute("placeholder", "Insira um nome válido");
+      name.classList.add("invalid");
+      valid = false;
+    }
+
+    if (!cnpj.value) {
+      cnpj.setAttribute("placeholder", "Insira um cnpj válido");
+      cnpj.classList.add("invalid");
+      valid = false;
+    }
+
+    if (telefone.value.length != 11) {
+      telefone.value = "";
+      telefone.classList.add("invalid");
+      telefone.setAttribute("placeholder", "Insira um telefone válido");
+      valid = false;
+    }
   } else if (currentTab == 1) {
+    let cep = document.querySelector("#cep");
+    let bairro = document.querySelector("#bairro");
+    let numero_endereco = document.querySelector("#numero_endereco");
+    let endereco = document.querySelector("#endereco");
+
+    if (cep.value.length != 8) {
+      cep.classList.add("invalid");
+      cep.value = "";
+      cep.setAttribute("placeholder", "Insira um cep válido");
+      valid = false;
+    }
+
+    if (!bairro.value) {
+      bairro.classList.add("invalid");
+
+      bairro.setAttribute("placeholder", "Insira um bairro válido");
+      valid = false;
+    }
+
+    if (!numero_endereco.value) {
+      numero_endereco.classList.add("invalid");
+      numero_endereco.setAttribute(
+        "placeholder",
+        "Insira um numero de endereço válido"
+      );
+      valid = false;
+    }
+
+    if (!endereco.value) {
+      endereco.classList.add("invalid");
+      endereco.setAttribute("placeholder", "Insira um endereço válido");
+      valid = false;
+    }
+  } else if (currentTab == 2) {
+    let email = document.querySelector("#email");
+    let password = document.querySelector("#password");
+
+    if (email.value.indexOf("@") == -1 || email.value.indexOf(".com") == -1) {
+      email.classList.add("invalid");
+      email.value = "";
+      email.setAttribute("placeholder", "Insira um email válido");
+      valid = false;
+    }
+
+    if (!password) {
+      password.classList.add("invalid");
+      password.setAttribute("placeholder", "Insira uma senha válida");
+      valid = false;
+    }
   } else {
+    let sobre_mim = document.querySelector("#FormControlTextarea");
+
+    if (!sobre_mim) {
+      sobre_mim.classList.add("invalid");
+      sobre_mim.setAttribute(
+        "placeholder",
+        "Insira alguma informação sobre o fornecimento"
+      );
+      valid = false;
+    }
   }
 
   if (valid) {
