@@ -72,9 +72,6 @@
         <div class="step">
           <div class="bullet"></div>
         </div>
-        <div class="step">
-          <div class="bullet"></div>
-        </div>
       </div>
       <section class="tab-pane text-center">
         <div class="tab form rounded-3 aln">
@@ -82,32 +79,25 @@
             <input
               type="text"
               class="form-control"
-              placeholder="Nome completo"
-              aria-label="Nome completo"
+              placeholder="Nome da Empresa"
+              aria-label="Nome da Empresa"
+              id="nome_empresa"
             />
           </div>
           <div class="mb-3">
             <input
-              type="email"
+              type="text"
               class="form-control"
-              id="email"
-              placeholder="E-mail"
-            />
-          </div>
-          <div class="mb-3">
-            <input
-              type="tel"
-              class="form-control"
-              id="numero"
-              placeholder="Número telefone"
+              id="cnpj"
+              placeholder="CNPJ"
             />
           </div>
           <div class="mb-5">
             <input
-              type="number"
+              type="tel"
               class="form-control"
-              id="cpf"
-              placeholder="CPF"
+              id="telefone"
+              placeholder="Número telefone"
             />
           </div>
           <div class="separar">
@@ -122,23 +112,42 @@
           </div>
         </div>
       </section>
-
       <section class="tab-pane text-center">
-        <div class="tab form rounded-3 alf-1">
+        <div class="tab form rounded-3 aln">
           <div class="mb-3">
             <input
               type="text"
               class="form-control"
-              placeholder="Nome da Empresa"
-              aria-label="Nome da Empresa"
+              placeholder="CEP"
+              aria-label="CEP"
+              id="cep"
             />
           </div>
-          <div class="mb-4">
+          <div class="mb-3">
             <input
-              type="number"
+              type="text"
               class="form-control"
-              id="cnpj"
-              placeholder="CNPJ"
+              placeholder="Endereço"
+              aria-label="Endereço"
+              id="endereco"
+            />
+          </div>
+          <div class="mb-3">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Bairro"
+              aria-label="Bairro"
+              id="bairro"
+            />
+          </div>
+          <div class="mb-5">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Nº Residência"
+              aria-label="Nº Residência"
+              id="numero_endereco"
             />
           </div>
           <div class="separar2">
@@ -163,68 +172,34 @@
       </section>
 
       <section class="tab-pane text-center">
-        <div class="tab form rounded-3 alf-2">
+        <div class="tab form rounded-3 aln">
           <div class="mb-3">
             <input
-              type="number"
+              type="email"
               class="form-control"
-              placeholder="CEP"
-              aria-label="CEP"
+              id="email"
+              placeholder="E-mail"
             />
           </div>
-          <div class="mb-5">
+          <div class="mb-3">
             <input
-              type="text"
+              type="password"
               class="form-control"
-              placeholder="Endereço"
-              aria-label="Endereço"
+              id="password"
+              placeholder="password"
             />
           </div>
           <div class="separar2">
             <button
               type="button"
-              class="btn tmn-2 me-2"
+              class="btn tmn-2 me-2 mt-5"
               id="prevBtn"
               onclick="nextPrev(-1)"
             >
               Voltar
             </button>
             <button
-              class="btn tmn-2"
-              type="button"
-              id="nextBtn"
-              onclick="nextPrev(1)"
-            >
-              Avançar
-            </button>
-          </div>
-        </div>
-      </section>
-
-      <section class="tab-pane text-center">
-        <div class="tab form rounded-3 aln-2">
-          <div class="mb-3 mb-5 espaco">
-            <select
-              class="form-select text-center"
-              aria-label="Selecione categoria"
-            >
-              <option selected>Categoria</option>
-              <option value="1">One</option>
-              <option value="2">Two</option>
-              <option value="3">Three</option>
-            </select>
-          </div>
-          <div class="separar2">
-            <button
-              type="button"
-              class="btn tmn-2 me-2"
-              id="prevBtn"
-              onclick="nextPrev(-1)"
-            >
-              Voltar
-            </button>
-            <button
-              class="btn tmn-2"
+              class="btn tmn-2 mt-5"
               type="button"
               id="nextBtn"
               onclick="nextPrev(1)"
@@ -270,11 +245,18 @@
             >
               Voltar
             </button>
-            <button class="btn tmn-2" type="submit">Finalizar</button>
+            <button
+              class="btn tmn-2"
+              type="submit"
+              onclick="cadastrarFornecedor()"
+            >
+              Finalizar
+            </button>
           </div>
         </div>
       </section>
     </form>
-    <script src="js/cadastro.js"></script>
+    <script src="js/cadastrarFornecedor.js"></script>
+    <script src="js/cadastroF.js"></script>
   </body>
 </html>
