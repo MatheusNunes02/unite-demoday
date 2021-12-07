@@ -8,4 +8,4 @@ function readImage() {
         file.readAsDataURL(this.files[0]);
     }
 }
-document.getElementById("img-input").addEventListener("change", readImage, false);
+// document.getElementById("img-input").addEventListener("change", readImage, false);

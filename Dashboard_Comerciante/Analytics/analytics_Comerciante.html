@@ -14,6 +14,17 @@
   <link rel="stylesheet" href="css/EditarPerfil-Comerciante.css">
   <link rel="stylesheet" href="css/form.css">
   <link rel="stylesheet" href="css/sidebar.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+  crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+  crossorigin="anonymous"></script>
+
+  <script src="js/sidebar.js"></script>
+  <script src="js/imagem.js"></script>
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 </head>
 
 <body>  
@@ -48,7 +59,7 @@
                                 d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z">
                             </path>
                         </svg>
-                        <span>Realizar Pesquisa</span>
+                        <span>Realizar pesquisa</span>
                     </a>
                 </li>
                 <li class="nav-item mb-3 active">
@@ -150,7 +161,7 @@
 
          <!-- Analytics -->
          
-        <section>
+        <section id="conteudo">
           <div class="spr">
             <h2>Analytics</h2>
            </div>
@@ -172,33 +183,16 @@
           </div>        
           <div id="gr_area" class="container">
               <div class="row">
-                <div id="curve_chart" style="width: 900px; height: 500px" class="col">
+                <div id="curve_chart" style=" height: 500px; padding: 20px;" class="col">
                 </div>
               </div>
-          </div>
-          <div id="p-blue" class="container">
-            <div class="row">
-                <div id="blue_a" class="col">
-                </div>
-            </div>
           </div>
         </section>
 
     </div>
 
 </div>
- 
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-  crossorigin="anonymous"></script>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-  crossorigin="anonymous"></script>
-
-<script src="js/sidebar.js"></script>
-<script src="js/imagem.js"></script>
-<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script type="text/javascript">
       google.charts.load('current', {'packages':['corechart']});
       google.charts.setOnLoadCallback(drawChart);
