@@ -10,7 +10,16 @@ body{
     min-height: 100vh;
     transition: all 0.3s;
     background: var(--branco);
-  }
+}
+
+/* Imagem */
+.img-md {
+    width: 64px;
+    height: 64px;
+}
+.img-circle {
+    border-radius: 50%;
+}
 
 .spr{
     margin: 5rem 0rem 5rem 3rem;
@@ -55,21 +64,8 @@ h5{
 
 #gr_area{
     background-color: var(--branco);
-    min-width: none;
+
     width: 100%;
-    height: 500px;
 }
 
 
-/* Área azul vazia que eu não faço ideia do que serve, tô só seguindo o figma */
-#p-blue{
-    width: 1000px;
-    min-width: none;
-}
-
-#blue_a{
-    margin-top: 50px;
-    height: 300px;
-    background-color: var(--azulEscuro);
-    border-radius: 15px;
-}
