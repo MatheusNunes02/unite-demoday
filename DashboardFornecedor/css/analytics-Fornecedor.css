@@ -1,0 +1,39 @@
+@import url(../global/global.css);
+
+#conteudoAnalytics{
+    margin-left: 0px !important;
+}
+
+/* analytics */
+
+#dados{
+    text-align: center;
+    color: var(--branco);
+    background-color: var(--amarelo);
+    margin: 50px;
+    margin-top: 0;
+    border-radius: 15px;
+    padding-bottom: 30px;
+    box-shadow: 0px 2px 6px grey;
+}
+
+h5{
+    margin-bottom: 10px;
+}
+
+#num{
+    margin-top: 10px;
+}
+
+#cards{
+    display: flex;
+    align-items: center;
+}
+
+/* Área do gráfico */
+
+#gr_area{
+    background-color: var(--branco);
+
+    width: 100%;
+}

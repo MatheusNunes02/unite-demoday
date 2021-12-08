@@ -1,0 +1,31 @@
+@import url(../global/global.css);
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+/* CONTENT  */
+#content {
+  width: 100%;
+  padding: 20px;
+  min-height: 100vh;
+  transition: all 0.3s;
+  background: var(--branco);
+}
+section {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* ESPAÇAMENTO / MARGIN */
+
+.separar {
+  padding-top: 0.4rem;
+  padding-bottom: 4.2rem;
+}
+.spr {
+  margin: 5rem 0 5rem 0rem;
+}
+.limite {
+  margin: 5rem 0;
+}

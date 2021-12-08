@@ -1,0 +1,14 @@
+@import url(../global/global.css);
+
+/* Alterar senha */
+.texto {
+  font-size: 18px;
+}
+/* Imagem */
+.img-md {
+  width: 64px;
+  height: 64px;
+}
+.img-circle {
+  border-radius: 50%;
+}

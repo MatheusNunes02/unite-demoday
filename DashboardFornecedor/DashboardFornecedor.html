@@ -11,36 +11,28 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
         rel="stylesheet">
+    
+    <!-- EDITAR PERFIL -->
+    <link rel="stylesheet" href="css/EditarPerfil-Fornecedor.css">
 
-    <!-- Editar Perfil -->
-    <link rel="stylesheet" href="css/EditarPerfil-Comerciante.css">
+    <!-- ANALYTICS -->
+    <link rel="stylesheet" href="css/analytics-Fornecedor.css">
 
-    <!-- Chats -->
-    <link rel="stylesheet" href="css/chat-comerciante.css">
-
-    <!-- Alterar Senha -->
+    <!-- ALTERAR SENHA -->
     <link rel="stylesheet" href="css/alterarSenha.css">
 
-    <!-- GERAL - CONTÉM EM TODAS AS PÁGINAS -->
+    <!-- CHATS -->
+    <link rel="stylesheet" href="css/chat-fornecedor.css">
+
+    <!-- GERAL - CONTÉM CONTEUDO IGUAIS DE TODAS AS PÁGINAS -->
     <link rel="stylesheet" href="css/geral.css">
 
-
-    <!-- ESTILO DO FORM E BUTTON -->
     <link rel="stylesheet" href="css/formAndButton.css">
-
-    <!-- Sidebar -->
     <link rel="stylesheet" href="css/sidebar.css">
-    <script src='../../js/token.js'></script>
-
-    <!-- Analytics -->
-    <link rel="stylesheet" href="css/analytics-Comerciante.css">
-
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-
 </head>
 
 <body>
-    <!-- Pertence ao Comerciante -->
+    <!-- Pertence ao Fornecedor -->
     <div class="wrapper">
         <!-- Sidebar  -->
         <nav id="sidebar">
@@ -63,7 +55,7 @@
                 <!-- PRIMEIRA PARTE SIDEBAR -->
                 <ul class="nav flex-column">
                     <li class="nav-item mb-3">
-                        <a class="nav-link" href="../Tela_pesquisar_fornecedor/telaPesquisa_Fornecedor.html">
+                        <a class="nav-link" href="../../Tela_pesquisar_fornecedor/telaPesquisa_Fornecedor.html">
                             <svg class="me-4" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search"
                                 class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
                                 width="18" viewBox="0 0 512 512">
@@ -75,7 +67,7 @@
                         </a>
                     </li>
                     <li class="nav-item mb-3 active">
-                        <a class="nav-link" aria-current="page" onclick='carregarConteudo(analytics)'>
+                        <a class="nav-link active" aria-current="page" onclick='carregarConteudo(analytics)'>
                             <svg class="me-4" aria-hidden="true" focusable="false" data-prefix="fas"
                                 data-icon="chart-pie" class="svg-inline--fa fa-chart-pie fa-w-17" role="img"
                                 xmlns="http://www.w3.org/2000/svg" width="18" viewBox="0 0 544 512">
@@ -111,7 +103,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" onclick="carregarConteudo(alterarSenha)">
+                        <a class="nav-link " onclick='carregarConteudo(alterarSenha)'>
                             <svg class="me-4" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="cog"
                                 class="svg-inline--fa fa-cog fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
                                 width="18" viewBox="0 0 512 512">
@@ -140,7 +132,7 @@
                         </a>
                     </li>
                     <li class="nav-item mb-5">
-                        <a class="nav-link" href="../../Login/login.html">
+                        <a class="nav-link" href="#">
                             <svg class="me-4" aria-hidden="true" focusable="false" data-prefix="fas"
                                 data-icon="sign-out-alt" class="svg-inline--fa fa-sign-out-alt fa-w-16" role="img"
                                 xmlns="http://www.w3.org/2000/svg" width="18" viewBox="0 0 512 512">
@@ -171,9 +163,9 @@
                 </div>
             </nav>
 
-            <!-- CONTEÚDO SERÁ ADICIONADO A BAIXO PELO JS - COMERCIANTE -->
-            <section id="conteudo">
-
+            <!-- CONTÉUDO QUE VEM DO JS - APARECE ABAIXO -->
+            <section id="conteudos">
+                
             </section>
 
         </div>
@@ -181,49 +173,43 @@
     </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-    </script>
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
-    </script>
-
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
 
     <script src="js/sidebar.js"></script>
     <script src="js/imagem.js"></script>
-    <script src="js/dashboardComerciante.js"></script>
+    <script src="js/dashboardFornecedor.js"></script>
 
-    <!-- Analytics -->
-    <!-- <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script> -->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script type="text/javascript">
-        google.charts.load('current', {
-            'packages': ['corechart']
-        });
-        google.charts.setOnLoadCallback(drawChart);
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
 
-        function drawChart() {
-            var data = google.visualization.arrayToDataTable([
-                ['Year', 'Sales', 'Expenses'],
-                ['2019', 400, 400],
-                ['2020', 600, 460],
-                ['2021', 1020, 1120],
-                ['2022', 930, 540]
-            ]);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Year', 'Sales', 'Expenses'],
+          ['2019',  400,         400],
+          ['2020',  600,         460],
+          ['2021',  1020,       1120],
+          ['2022',  930,         540]
+        ]);
 
-            var options = {
-                title: '',
-                curveType: 'function',
-                legend: {
-                    position: 'bottom'
-                }
-            };
+        var options = {
+          title: '',
+          curveType: 'function',
+          legend: { position: 'bottom' }
+        };
 
-            var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+        var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
 
-            chart.draw(data, options);
-        }
+        chart.draw(data, options);
+      }
     </script>
-    
+
 </body>
 
 </html>
