@@ -1,0 +1,10 @@
+@import url(../global/global.css);
+
+/* ALTERAR SENHA */
+.separarButton {
+  padding-top: 0.4rem;
+  padding-bottom: 4.2rem;
+}
+.texto {
+  font-size: 18px;
+}

@@ -1,0 +1,16 @@
+@import url(../global/global.css);
+
+/* EDITAR PERFIL */
+.texto{
+    font-size: 18px;
+
+    margin-bottom:.3rem;
+}
+/* Imagem */
+.img-md {
+    width: 64px;
+    height: 64px;
+}
+.img-circle {
+    border-radius: 50%;
+}

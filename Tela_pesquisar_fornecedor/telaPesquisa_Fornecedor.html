@@ -21,20 +21,20 @@
       <div class="container">
         <div class="containerHeaderall">
           <div>
-            <a href="../Dashboard_comerciante/chats/chat-Comerciante.html">
+            <a href="../Dashboard_Comerciante/dashboardComerciante.html">
             <img src="img/logo_amerelo.png">
           </a>
           </div>
           
           <div class="input-group inputPesquisar">
-              <input type="search" class="form-control" placeholder="Busque por fornecedores" aria-label="Recipient's username" aria-describedby="basic-addon2">
+              <input type="search" class="form-control" id="barraPesquisar" placeholder="Busque por fornecedores" aria-label="Recipient's username" aria-describedby="basic-addon2">
               <div class="input-group-append">
-              <button class="botaoInputpesquisar"><img src="img/lupa.svg"></button>
+              <button class="botaoInputpesquisar" onclick="pesquisarFornecedores()"><img src="img/lupa.svg"></button>
               </div>
           </div>
           
           <div class="containerImperfil">
-            <a href="../Dashboard_comerciante/chats/chat-Comerciante.html">
+            <a href="../Dashboard_comerciante/dashboardComerciante.html">
             <img src="img/fotoPerfil.png">
           </a>
           </div>
@@ -138,7 +138,8 @@
 
 
     
-<script src="js/listarFornecedores.js"></script>    
+<script src="js/listarFornecedores.js"></script>
+<script src="js/pesquisarFornecedores.js"></script>    
 </body>
 
 </html>

@@ -14,7 +14,7 @@ async function Login() {
     localStorage.setItem("session", JSON.stringify(userData));
 
     window.location.href =
-      "../Dashboard_Comerciante/chats/chat-Comerciante.html";
+      "../Dashboard_Comerciante/dashboardComerciante.html";
   }
 
   console.log(result.data);

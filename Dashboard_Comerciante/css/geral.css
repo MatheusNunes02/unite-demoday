@@ -4,7 +4,7 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-/* CONTENT  */
+/* CONTENT / PADRÃO */
 #content {
   width: 100%;
   padding: 20px;
@@ -12,31 +12,19 @@ body {
   transition: all 0.3s;
   background: var(--branco);
 }
-
-/* Alterar senha */
 section {
   max-width: 800px;
   margin: 0 auto;
 }
-.separar {
-  padding-top: 0.4rem;
-  padding-bottom: 4.2rem;
-}
-.texto {
-  font-size: 18px;
-}
+
+/* SEPARAÇÃO DOS CONTÉUDOS / MARGIN */
 .spr {
   margin: 5rem 0 5rem 0rem;
 }
-.limite{
+.limite {
   margin: 5rem 0;
 }
-
-/* Imagem */
-.img-md {
-  width: 64px;
-  height: 64px;
-}
-.img-circle {
-  border-radius: 50%;
+.separar {
+  padding-top: 4rem;
+  padding-bottom: 1.5rem;
 }

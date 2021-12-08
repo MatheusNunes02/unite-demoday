@@ -1,36 +1,6 @@
 @import url(../global/global.css);
 
-body{
-    font-family: "Roboto", sans-serif;
-}
-/* CONTENT  */
-#content {
-    width: 100%;
-    padding: 20px;
-    min-height: 100vh;
-    transition: all 0.3s;
-    background: var(--branco);
-}
-
-/* Imagem */
-.img-md {
-    width: 64px;
-    height: 64px;
-}
-.img-circle {
-    border-radius: 50%;
-}
-
-.spr{
-    margin: 5rem 0rem 5rem 3rem;
-}
-
-section{
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-#conteudo{
+#conteudoAnalytics{
     margin-left: 0px !important;
 }
 
@@ -67,5 +37,3 @@ h5{
 
     width: 100%;
 }
-
-
