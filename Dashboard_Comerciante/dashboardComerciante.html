@@ -30,13 +30,13 @@
 
     <!-- Sidebar -->
     <link rel="stylesheet" href="css/sidebar.css">
-    <script src='../../js/token.js'></script>
 
     <!-- Analytics -->
     <link rel="stylesheet" href="css/analytics-Comerciante.css">
 
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src='../js/token.js'></script>
 </head>
 
 <body>
@@ -52,12 +52,12 @@
             <div class="position-sticky navbar-collapse collapse show pt-3" id="navbarNav">
                 <div class="text-center mt-3 texting">
                     <span>Bem vindo,<br>
-                        aqui é o seu dashboard</span>
+                        aqui é o seu dashboard</span>   
                 </div>
 
                 <!-- Imagem -->
-                <div class="pad-btm text-center mt-3 mb-5">
-                    <img class="img-circle img-md" src="img/fotoPerfil.png" alt="Foto Perfil">
+                <div class=" text-center mt-3 mb-5" id="divIcon">
+                    <img id="accountIcon" src="img/accountimg.jpg" alt="Foto Perfil">
                 </div>
 
                 <!-- PRIMEIRA PARTE SIDEBAR -->
@@ -75,7 +75,7 @@
                         </a>
                     </li>
                     <li class="nav-item mb-3 active">
-                        <a class="nav-link" aria-current="page" onclick='carregarConteudo(analytics)'>
+                        <a class="nav-link" aria-current="page" onclick='carregarConteudo(analytics,true)'>
                             <svg class="me-4" aria-hidden="true" focusable="false" data-prefix="fas"
                                 data-icon="chart-pie" class="svg-inline--fa fa-chart-pie fa-w-17" role="img"
                                 xmlns="http://www.w3.org/2000/svg" width="18" viewBox="0 0 544 512">
@@ -140,7 +140,7 @@
                         </a>
                     </li>
                     <li class="nav-item mb-5">
-                        <a class="nav-link" href="../../Login/login.html">
+                        <a class="nav-link" href="../Login/login.html">
                             <svg class="me-4" aria-hidden="true" focusable="false" data-prefix="fas"
                                 data-icon="sign-out-alt" class="svg-inline--fa fa-sign-out-alt fa-w-16" role="img"
                                 xmlns="http://www.w3.org/2000/svg" width="18" viewBox="0 0 512 512">
@@ -196,34 +196,36 @@
     <!-- Analytics -->
     <!-- <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script> -->
     <script type="text/javascript">
-        google.charts.load('current', {
-            'packages': ['corechart']
-        });
-        google.charts.setOnLoadCallback(drawChart);
+                google.charts.load('current', {
+                'packages': ['corechart']
+                });
+                 google.charts.setOnLoadCallback(drawChart);
+                
+                 
+            function drawChart() {
+                var data = google.visualization.arrayToDataTable([
+                    ['Mês', 'Contatos'],
+                    ['Jan', 5],
+                    ['Fev', 3],
+                    ['Mar', 7],
+                    ['Abr', 5]
+                ]);
 
-        function drawChart() {
-            var data = google.visualization.arrayToDataTable([
-                ['Year', 'Sales', 'Expenses'],
-                ['2019', 400, 400],
-                ['2020', 600, 460],
-                ['2021', 1020, 1120],
-                ['2022', 930, 540]
-            ]);
+                var options = {
+                    title: '',
+                    curveType: 'function',
+                    legend: {
+                        position: 'bottom'
+                    }
+                };
 
-            var options = {
-                title: '',
-                curveType: 'function',
-                legend: {
-                    position: 'bottom'
-                }
-            };
+                var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
 
-            var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
-
-            chart.draw(data, options);
-        }
+                chart.draw(data, options);
+            }
     </script>
-    
+
 </body>
 
 </html>
+

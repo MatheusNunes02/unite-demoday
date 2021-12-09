@@ -1,3 +1,5 @@
+
+
 var analytics = `<div id='conteudoAnalytics'>
                     <div class='spr'>
                         <h2>Analytics</h2>
@@ -68,8 +70,39 @@ var alterarSenha = `<div class='spr'>
 
 var elemento = document.getElementById('conteudo');
 
-function carregarConteudo(conteudo) {
-    elemento.innerHTML = conteudo;
+function carregarConteudo(conteudo, loadGraph=false) {
+    if(!loadGraph){
+        elemento.innerHTML = conteudo;
+    }else{
+        google.charts.load('current', {
+            'packages': ['corechart']
+            });
+             google.charts.setOnLoadCallback(drawChart);
+            
+             
+        function drawChart() {
+            var data = google.visualization.arrayToDataTable([
+                ['Mês', 'Contatos'],
+                ['Jan', 5],
+                ['Fev', 3],
+                ['Mar', 7],
+                ['Abr', 5]
+            ]);
+
+            var options = {
+                title: '',
+                curveType: 'function',
+                legend: {
+                    position: 'bottom'
+                }
+            };
+
+            var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+
+            chart.draw(data, options);
+        }
+        elemento.innerHTML = conteudo;
+    }
 }
 
 carregarConteudo(editarPerfil);

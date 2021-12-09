@@ -28,3 +28,16 @@ section {
   padding-top: 4rem;
   padding-bottom: 1.5rem;
 }
+
+
+#divIcon{
+  background: var(--azulEscuro);  
+}
+
+#accountIcon{
+  width: 70px;
+  height: 70px;
+
+  border-radius: 50%;
+  vertical-align: middle;
+}
