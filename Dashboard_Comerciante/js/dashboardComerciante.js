@@ -105,6 +105,7 @@ function carregarConteudo(conteudo, loadGraph=false) {
     }
 }
 
+
 carregarConteudo(editarPerfil);
 carregarConteudo(chats);
 carregarConteudo(alterarSenha);

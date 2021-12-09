@@ -12,7 +12,7 @@ async function pesquisarFornecedores(){
       
     const result = await api.get("/suppliers");
     let foundit = false;
-
+    let repetido = [];
 
     if(!result.data){
         content.innerHTML = `Erro no servidor :/`
@@ -23,6 +23,7 @@ async function pesquisarFornecedores(){
                 if(element.nome_empresa.toLowerCase().includes(searchItem) ||
                 element.descricao.toLowerCase().includes(searchItem))
                 {
+                    if(!repetido.includes(element.id)){
                         foundit = true;
                         content.innerHTML += `
                         <div class="cardExemplo"> 
@@ -38,7 +39,7 @@ async function pesquisarFornecedores(){
                         </div>
                         </div>
                         <div class="containerBotaoStar">
-                        <a href="../Dashboard_comerciante/chats/chat-Comerciante.html"><button>Entre em contato</button></a>
+                        <a href="../Dashboard_comerciante/dashboardComerciante.html?loadChat=true"><button onclick="redirecionarChat()">Entre em contato</button></a>
                         <div>
                         <span class="fa fa-star checked"></span>
                         <span class="fa fa-star checked"></span>
@@ -50,6 +51,10 @@ async function pesquisarFornecedores(){
                     </div>
                 
                         ` 
+
+                        repetido.push(element.id);
+                    }
+            
                 }
             })   
         })
@@ -59,5 +64,5 @@ async function pesquisarFornecedores(){
         content.innerHTML = "Nada foi encontrado :/";
     }
 
-
+    repetido = [];
 }

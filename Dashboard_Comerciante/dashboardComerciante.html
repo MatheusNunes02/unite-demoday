@@ -51,8 +51,8 @@
 
             <div class="position-sticky navbar-collapse collapse show pt-3" id="navbarNav">
                 <div class="text-center mt-3 texting">
-                    <span>Bem vindo,<br>
-                        aqui é o seu dashboard</span>   
+                    <span>Bem vindo Matheus!<br>
+                        Este é o Dashboard</span>       
                 </div>
 
                 <!-- Imagem -->
@@ -74,7 +74,7 @@
                             <span>Realizar Pesquisa</span>
                         </a>
                     </li>
-                    <li class="nav-item mb-3 active">
+                    <li class="nav-item mb-3 active" id="analyticsNav">
                         <a class="nav-link" aria-current="page" onclick='carregarConteudo(analytics,true)'>
                             <svg class="me-4" aria-hidden="true" focusable="false" data-prefix="fas"
                                 data-icon="chart-pie" class="svg-inline--fa fa-chart-pie fa-w-17" role="img"
@@ -86,7 +86,7 @@
                             <span>Analytics</span>
                         </a>
                     </li>
-                    <li class="nav-item mb-3">
+                    <li class="nav-item mb-3" id="chatsNav">
                         <a class="nav-link" onclick='carregarConteudo(chats)'>
                             <svg class="me-4" aria-hidden="true" focusable="false" data-prefix="fas"
                                 data-icon="comment-dots" class="svg-inline--fa fa-comment-dots fa-w-16" role="img"
@@ -195,12 +195,37 @@
 
     <!-- Analytics -->
     <!-- <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script> -->
-    <script type="text/javascript">
-                google.charts.load('current', {
-                'packages': ['corechart']
-                });
-                 google.charts.setOnLoadCallback(drawChart);
-                
+    <script>
+        function queryString(parameter) {  
+            var loc = location.search.substring(1, location.search.length);   
+            var param_value = false;   
+            var params = loc.split("&");   
+            for (i=0; i<params.length;i++) {   
+                param_name = params[i].substring(0,params[i].indexOf('='));   
+                if (param_name == parameter) {                                          
+                    param_value = params[i].substring(params[i].indexOf('=')+1)   
+                }   
+            }   
+            if (param_value) {   
+                return param_value;   
+            }   
+            else {   
+                return undefined;   
+            }   
+        }
+
+        goToChat = queryString("loadChat");
+
+        if(goToChat){
+        document.getElementById('analyticsNav').classList.remove("active")
+        document.getElementById("chatsNav").classList.add("active")
+        carregarConteudo(chats);
+        }else{
+            google.charts.load('current', {
+            'packages': ['corechart']
+            });
+                google.charts.setOnLoadCallback(drawChart);
+            
                  
             function drawChart() {
                 var data = google.visualization.arrayToDataTable([
@@ -223,8 +248,9 @@
 
                 chart.draw(data, options);
             }
+        }
+        console.log(goToChat)
     </script>
-
 </body>
 
 </html>

@@ -23,7 +23,7 @@
               </div>
             </div>
             <div class="containerBotaoStar">
-              <a href="../Dashboard_comerciante/chats/chat-Comerciante.html"><button>Entre em contato</button></a>
+              <a href="../Dashboard_comerciante/dashboardComerciante.html?loadChat=true"><button>Entre em contato</button></a>
               <div>
               <span class="fa fa-star checked"></span>
               <span class="fa fa-star checked"></span>
