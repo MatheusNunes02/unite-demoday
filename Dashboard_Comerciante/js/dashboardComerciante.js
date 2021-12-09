@@ -8,15 +8,15 @@ var analytics = `<div id='conteudoAnalytics'>
                         <div id='cards' class='row d-flex'>
                             <div id='dados' class='col'>
                                 <h5 id='num'>Visitas no perfil</h5>
-                                <h1>99</h1>
+                                <h1>20</h1>
                             </div>
                             <div id='dados' class='col'>
                                 <h5 id='num'>Chats</h5>
-                                <h1>72</h1>
+                                <h1>12</h1>
                             </div>
                             <div id='dados' class='col'>
                                 <h5 id='num'>Avaliação</h5>
-                                <h1>4.5</h1>
+                                <h1>4.7</h1>
                             </div>
                         </div>
                     </div>
