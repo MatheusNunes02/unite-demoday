@@ -177,6 +177,10 @@ body{
     color: var(--amarelo);
 }
 
+#accountIcon{
+    border-radius: 50%;
+}
+
 @media (max-width: 1000px) {
 
     .cardExemplo{
